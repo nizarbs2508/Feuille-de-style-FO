@@ -1,0 +1,18 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <env:Body xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+      <ns17:SE_ARRECHEPRESCR xmlns="urn:ir:e_prescr" xmlns:ns4="urn:ir:conseprescr" xmlns:ns8="urn:ir:e_prescr_exec" xmlns:ns11="urn:ir:e_prescr_inf_exec" xmlns:ns3="urn:ir:ar_recheprescr" xmlns:ns9="urn:ir:e_prescr_inf" xmlns:ns2="urn:ir:ar_execeprescr" xmlns:ns10="urn:ir:e_prescr_inf_modif" xmlns:ns1="urn:ir:ar_creereprescr" xmlns:ns6="urn:ir:execeprescr" xmlns:ns5="urn:ir:creerepresc" xmlns:ns0="urn:ir:ar_conseprescr" xmlns:ns7="urn:ir:recheprescr" xmlns:ns12="urn:ir:se_creerepresc" xmlns:ns13="urn:ir:se_execeprescr" xmlns:ns14="urn:ir:se_ar_execeprescr" xmlns:ns15="urn:ir:se_conseprescr" xmlns:ns16="urn:ir:se_recheprescr" xmlns:ns17="urn:ir:se_ar_recheprescr" xmlns:ns18="urn:ir:se_ar_creereprescr" xmlns:ns19="urn:ir:se_ar_conseprescr">
+         <ns3:Horodatage>2022-05-09T14:50:53.989+02:00</ns3:Horodatage>
+         <ns3:ARRECHEPRESCR>
+            <ns3:PRESCRIPTION>
+               <ns3:Numero>02ZAG1NL1J5AS7ANFH</ns3:Numero>
+               <ns3:Type>PRODUITS_SANTE</ns3:Type>
+            </ns3:PRESCRIPTION>
+            <ns3:PATIENT>
+               <ns3:Rang>1</ns3:Rang>
+               <ns3:NumNIROD>1760163220758</ns3:NumNIROD>
+               <ns3:DateNai>1976-01-01</ns3:DateNai>
+            </ns3:PATIENT>
+         </ns3:ARRECHEPRESCR>
+      </ns17:SE_ARRECHEPRESCR>
+   </env:Body>
+</soap:Envelope>

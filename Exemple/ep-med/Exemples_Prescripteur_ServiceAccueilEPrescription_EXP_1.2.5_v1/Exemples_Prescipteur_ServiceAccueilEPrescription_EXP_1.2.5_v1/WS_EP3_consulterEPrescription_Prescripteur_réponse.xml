@@ -1,0 +1,100 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <env:Body xmlns:S="http://www.w3.org/2003/05/soap-envelope" xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+      <ns19:SE_ARCONSEPRESCR xmlns="urn:ir:e_prescr" xmlns:ns4="urn:ir:conseprescr" xmlns:ns8="urn:ir:e_prescr_exec" xmlns:ns11="urn:ir:e_prescr_inf_exec" xmlns:ns3="urn:ir:ar_recheprescr" xmlns:ns9="urn:ir:e_prescr_inf" xmlns:ns2="urn:ir:ar_execeprescr" xmlns:ns10="urn:ir:e_prescr_inf_modif" xmlns:ns1="urn:ir:ar_creereprescr" xmlns:ns6="urn:ir:execeprescr" xmlns:ns5="urn:ir:creerepresc" xmlns:ns0="urn:ir:ar_conseprescr" xmlns:ns7="urn:ir:recheprescr" xmlns:ns12="urn:ir:se_creerepresc" xmlns:ns13="urn:ir:se_execeprescr" xmlns:ns14="urn:ir:se_ar_execeprescr" xmlns:ns15="urn:ir:se_conseprescr" xmlns:ns16="urn:ir:se_recheprescr" xmlns:ns17="urn:ir:se_ar_recheprescr" xmlns:ns18="urn:ir:se_ar_creereprescr" xmlns:ns19="urn:ir:se_ar_conseprescr">
+         <ns0:Horodatage>2022-05-09T14:50:19.940+02:00</ns0:Horodatage>
+         <ns0:INFOPRESCRIPTION>
+            <ns9:VersionNorme>04.00</ns9:VersionNorme>
+            <ns9:PRESCRIPTION>
+               <ns9:Numero>02ZAG1NL1J5AS7ANFH</ns9:Numero>
+               <ns9:Date>2022-05-09T16:36:28.671+02:00</ns9:Date>
+               <ns9:Type>PRODUITS_SANTE</ns9:Type>
+               <ns9:NbLignes>2</ns9:NbLignes>
+               <ns9:Consentement>true</ns9:Consentement>
+               <ns9:Domicile>false</ns9:Domicile>
+               <ns9:Urgence>false</ns9:Urgence>
+               <ns9:Militaire>false</ns9:Militaire>
+               <ns9:CONTENUPRESCRIPTION>
+                  <ns9:LIGMEDICAMENTEUX>
+                     <ns9:NumLigne>1</ns9:NumLigne>
+                     <ns9:TypeEltPrescrit>1</ns9:TypeEltPrescrit>
+                     <ns9:NbRenouv>0</ns9:NbRenouv>
+                     <ns9:EstEnRapportALD>false</ns9:EstEnRapportALD>
+                     <ns9:EstEnRapportAccident>false</ns9:EstEnRapportAccident>
+                     <ns9:EstEnRapportPrev>false</ns9:EstEnRapportPrev>
+                     <ns9:CIP>3400955473350</ns9:CIP>
+                     <ns9:Specialite>DOLIPRANE 500MG CPR 100</ns9:Specialite>
+                     <ns9:Posologie>500 à 1000 mg/prise 3 fois toutes les 24 heures</ns9:Posologie>
+                     <ns9:EstNonRemb>false</ns9:EstNonRemb>
+                     <ns9:EstNonSub>false</ns9:EstNonSub>
+                     <ns9:EstHorsAMM>false</ns9:EstHorsAMM>
+                     <ns9:TrtAntiBio>false</ns9:TrtAntiBio>
+                     <ns9:RTU>false</ns9:RTU>
+                  </ns9:LIGMEDICAMENTEUX>
+                  <ns9:LIGDISPOSITIFMEDICAL>
+                     <ns9:NumLigne>2</ns9:NumLigne>
+                     <ns9:NbRenouv>0</ns9:NbRenouv>
+                     <ns9:EstEnRapportALD>false</ns9:EstEnRapportALD>
+                     <ns9:EstEnRapportAccident>false</ns9:EstEnRapportAccident>
+                     <ns9:EstEnRapportPrev>false</ns9:EstEnRapportPrev>
+                     <ns9:EstNonRemb>false</ns9:EstNonRemb>
+                     <ns9:CodeLPP>1215702</ns9:CodeLPP>
+                     <ns9:LibelleLPPLibre>lit médical, lit + 135 kg, forfait de livraison du lit et accessoires</ns9:LibelleLPPLibre>
+                  </ns9:LIGDISPOSITIFMEDICAL>
+               </ns9:CONTENUPRESCRIPTION>
+            </ns9:PRESCRIPTION>
+            <ns9:PRESCRIPTEUR>
+               <ns9:IdentifiantRPPS>99700295274</ns9:IdentifiantRPPS>
+               <ns9:Specialite>01</ns9:Specialite>
+               <ns9:Nom>LIBRE</ns9:Nom>
+               <ns9:Prenom>MAX</ns9:Prenom>
+               <ns9:Identifiant R="AM">001095272</ns9:Identifiant>
+            </ns9:PRESCRIPTEUR>
+            <ns9:PATIENT>
+               <ns9:Prenom>BRUNO</ns9:Prenom>
+               <ns9:DateNai>1976-01-01</ns9:DateNai>
+            </ns9:PATIENT>
+            <ns9:EXECUTANT/>
+         </ns0:INFOPRESCRIPTION>
+         <ns0:INFOEXECUTION>
+            <ns11:VersionNorme>04.00</ns11:VersionNorme>
+            <ns11:EXECUTION>
+               <ns11:Date>2022-05-09T16:41:26.535+02:00</ns11:Date>
+               <ns11:LIGEXECUTION>
+                  <ns11:Renouvellement>false</ns11:Renouvellement>
+                  <ns11:NbEltExec>2</ns11:NbEltExec>
+                  <ns11:LIGMEDICAMENTEUX>
+                     <ns11:Id>1</ns11:Id>
+                     <ns11:TypeEltPrescrit>1</ns11:TypeEltPrescrit>
+                     <ns11:NbreCond>1</ns11:NbreCond>
+                     <ns11:CIP>3400955473350</ns11:CIP>
+                     <ns11:Molecules>DOLIPRANE 500MG CPR 100</ns11:Molecules>
+                  </ns11:LIGMEDICAMENTEUX>
+               </ns11:LIGEXECUTION>
+               <ns11:LIGEXECUTION>
+                  <ns11:Renouvellement>false</ns11:Renouvellement>
+                  <ns11:NbEltExec>2</ns11:NbEltExec>
+                  <ns11:LIGDISPOSITIFMEDICAL>
+                     <ns11:Id>2</ns11:Id>
+                     <ns11:CodeLPP>1215702</ns11:CodeLPP>
+                     <ns11:LibelleMarque>Sofamed</ns11:LibelleMarque>
+                     <ns11:CodeAcquisition>A</ns11:CodeAcquisition>
+                     <ns11:DureeTraitement>60</ns11:DureeTraitement>
+                  </ns11:LIGDISPOSITIFMEDICAL>
+               </ns11:LIGEXECUTION>
+            </ns11:EXECUTION>
+            <ns11:EXECUTANT>
+               <ns11:IdentifiantRPPS>99700344577</ns11:IdentifiantRPPS>
+               <ns11:Specialite>50</ns11:Specialite>
+               <ns11:Nom>DUCOIN</ns11:Nom>
+               <ns11:Prenom>JULES</ns11:Prenom>
+               <ns11:Identifiant R="AM">002044576</ns11:Identifiant>
+            </ns11:EXECUTANT>
+            <ns11:PATIENT>
+               <ns11:Nom>ADRCINQ</ns11:Nom>
+               <ns11:NomUsage>ADRCINQ</ns11:NomUsage>
+               <ns11:Prenom>BRUNO</ns11:Prenom>
+            </ns11:PATIENT>
+         </ns0:INFOEXECUTION>
+      </ns19:SE_ARCONSEPRESCR>
+   </env:Body>
+</soap:Envelope>

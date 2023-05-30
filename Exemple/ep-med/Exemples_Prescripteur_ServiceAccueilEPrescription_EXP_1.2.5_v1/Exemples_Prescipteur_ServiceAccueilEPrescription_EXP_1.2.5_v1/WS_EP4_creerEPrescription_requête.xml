@@ -1,0 +1,113 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:urn="urn:siram:bam:ctxbam" xmlns:add="http://www.w3.org/2005/08/addressing" xmlns:urn1="urn:siram:lps:ctxlps" xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:urn2="urn:ir:se_creerepresc" xmlns:urn3="urn:ir:creerepresc" xmlns:urn4="urn:ir:e_prescr">
+   <soap:Header>
+      <add:MessageID>f67153d0-5d18-4c45-9637-a6c75fdc0253</add:MessageID>
+      <add:Action>urn:serviceaccueileprescription:1.2.1:creerEPrescription</add:Action>
+      <urn1:ContexteLPS Version="01_00">
+         <urn1:Id>f0d70dc0-943a-4e8d-9f6d-98f5bf9016c7</urn1:Id>
+         <urn1:Temps>2022-05-09T14:41:26.535Z</urn1:Temps>
+         <urn1:Emetteur>899700295274</urn1:Emetteur>
+         <urn1:LPS>
+            <urn1:IDAM R="4">****</urn1:IDAM>
+            <urn1:Version>1.00.00</urn1:Version>
+            <urn1:Instance>d54f9b47-97ad-4886-8dba-88c0f33935cb</urn1:Instance>
+            <urn1:Nom>GIE</urn1:Nom>
+         </urn1:LPS>
+      </urn1:ContexteLPS>
+      <oas:Security>
+         <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_5d35e4ee-47b0-4ec1-b5cb-6a7647e4237a" IssueInstant="2022-05-09T12:36:36.395Z" Version="2.0"><saml2:Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">SN2=LEON + CN=899700295274 + OID.2.5.4.4=MEDCAB0029527, OID.2.5.4.12=Médecin, C=FR</saml2:Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_5d35e4ee-47b0-4ec1-b5cb-6a7647e4237a"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Awx+cJl7vxdkh3VaeuYAh1FXREmVhc5gE1dpgmmQe1g=</DigestValue></Reference></SignedInfo><SignatureValue>OJyJ6/U0/A9rsvVxsKIKyF8519ZxvcdEirJey+AYhVEmbr+dycyw3FH+aKT/hwca0MWT3JvmUNi8&#xD;
+2dU3P2/cjkfMd85di2nia29jI7Us7b8JWQZF+ixvwpiAR+H61uxVvynbdtZM8hIZGwyWNN874EOB&#xD;
+n3ImPlUtXAhlkq/NIvQtdb+pJa6sN/pAiIyX8eyYVfIdxRdjI20EBFSXTE1S8YJ8LsDE77gsG5kZ&#xD;
+mGBBZa2emBSJ4KNWYR+Yr0cvpPMB46F14803HgLYj9/mj+knUJqQxRuZyitFw3jw6TjgVtv0XgE7&#xD;
++zTvswo2nybEWd1HLF2VqF+wXYaHdzPomcFFIA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIjTCCBnWgAwIBAgIQY9r/z8gDS9wPG3kM+Dh39jANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQG&#xD;
+EwJGUjETMBEGA1UECgwKQVNJUC1TQU5URTEXMBUGA1UECwwOMDAwMiAxODc1MTI3NTExFzAVBgNV&#xD;
+BAsMDklHQy1TQU5URSBURVNUMSkwJwYDVQQDDCBURVNUIEFDIElHQy1TQU5URSBGT1JUIFBFUlNP&#xD;
+Tk5FUzAeFw0yMDEyMTUxMzA4MzJaFw0yMzEyMTUxMzA4MzJaMFoxCzAJBgNVBAYTAkZSMREwDwYD&#xD;
+VQQMDAhNw6lkZWNpbjE4MAsGA1UEKgwETEVPTjATBgNVBAMMDDg5OTcwMDI5NTI3NDAUBgNVBAQM&#xD;
+DU1FRENBQjAwMjk1MjcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDA2M/yqcIprDH0&#xD;
+fpXAQMvJ67538CnA6YC5KMUu/WfwYq4WHCZc7r8QaaPtoVL1NJfgKSWymIYrmRpExRUjI0URpBi3&#xD;
+sXJRSUa9gxKEZmxLuE+U5ef7w01sOLtZAh8qDaXzhWzBAhrhlq1GM10M/3UUnQgJuZN+v50FdWDH&#xD;
+KdUl8Bj73f/juOWdnUWXNiXxjt71bFop0jCLdsx9OjjnjcRN7cI3+mCdH1Y6F/41Ed/TSZ6nY7EM&#xD;
+Vi07iggHrtV31YnEJL+/f7QPXRQ8sV+oDTPNFtVkO5yB89QmMOGF9f32Oh1s67wes8h8X7t95UOn&#xD;
+s7c1cUXYo8b+E/noll8zC/UvAgMBAAGjggQoMIIEJDAJBgNVHRMEAjAAMB0GA1UdDgQWBBTE/P53&#xD;
+kLtYToBnPSvxWFSGfyZjeTAfBgNVHSMEGDAWgBQ68ef1zuvt943JybKf7dRlKdwf/TAOBgNVHQ8B&#xD;
+Af8EBAMCBkAwUwYDVR0gBEwwSjBIBg0qgXoBgVUBBwIBAQEBMDcwNQYIKwYBBQUHAgEWKWh0dHA6&#xD;
+Ly9pZ2Mtc2FudGUuZXNhbnRlLmdvdXYuZnIvUEMlMjBURVNUMBMGA1UdJQQMMAoGCCsGAQUFBwME&#xD;
+MCsGA1UdEAQkMCKADzIwMjAxMjE1MTMwODMyWoEPMjAyMzEyMTUxMzA4MzJaMIIBQAYDVR0fBIIB&#xD;
+NzCCATMwPKA6oDiGNmh0dHA6Ly9pZ2Mtc2FudGUuZXNhbnRlLmdvdXYuZnIvQ1JML0FDSS1GTy1Q&#xD;
+UC1URVNULmNybDCB8qCB76CB7IaB6WxkYXA6Ly9hbm51YWlyZS1pZ2MuZXNhbnRlLmdvdXYuZnIv&#xD;
+Y249VEVTVCUyMEFDJTIwSUdDLVNBTlRFJTIwRk9SVCUyMFBFUlNPTk5FUyxvdT1URVNUJTIwQUMl&#xD;
+MjBSQUNJTkUlMjBJR0MtU0FOVEUlMjBGT1JULG91PUlHQy1TQU5URSUyMFRFU1Qsb3U9MDAwMiUy&#xD;
+MDE4NzUxMjc1MSxvPUFTSVAtU0FOVEUsYz1GUj9jZXJ0aWZpY2F0ZXJldm9jYXRpb25saXN0O2Jp&#xD;
+bmFyeT9iYXNlP29iamVjdENsYXNzPXBraUNBMIH6BgNVHS4EgfIwge8wgeyggemggeaGgeNsZGFw&#xD;
+Oi8vYW5udWFpcmUtaWdjLmVzYW50ZS5nb3V2LmZyL2NuPVRFU1QlMjBBQyUyMElHQy1TQU5URSUy&#xD;
+MEZPUlQlMjBQRVJTT05ORVMsb3U9VEVTVCUyMEFDJTIwUkFDSU5FJTIwSUdDLVNBTlRFJTIwRk9S&#xD;
+VCxvdT1JR0MtU0FOVEUlMjBURVNULG91PTAwMDIlMjAxODc1MTI3NTEsbz1BU0lQLVNBTlRFLGM9&#xD;
+RlI/ZGVsdGFyZXZvY2F0aW9ubGlzdDtiaW5hcnk/YmFzZT9vYmplY3RDbGFzcz1wa2lDQTCBgAYI&#xD;
+KwYBBQUHAQEEdDByMCYGCCsGAQUFBzABhhpodHRwOi8vb2NzcC5lc2FudGUuZ291di5mcjBIBggr&#xD;
+BgEFBQcwAoY8aHR0cDovL2lnYy1zYW50ZS5lc2FudGUuZ291di5mci9BQyUyMFRFU1QvQUNJLUZP&#xD;
+LVBQLVRFU1QuY2VyMA8GCCqBegFHAQIFBAMEAYAwDwYIKoF6AUcBAgIEAwIBADAjBggqgXoBRwEC&#xD;
+AwQXExU4MDI1MDAwMDAxLzI4MDA4MTA4ODcwDwYIKoF6AUcBAgcEAwIBCjAUBggqgXoBRwQCBQQI&#xD;
+MAYMBFNNNTQwDQYJKoZIhvcNAQELBQADggIBAKsQE73Y0uPvmw8lnAURoHJKD1h5mD2b2K3xAmPe&#xD;
+b8csofZMgATrUCwpqcmbAqWFIMLgO7a/hPbFVad37oL5s8TUfvTtg1aciUdlxb4vLGvPT96MbpFm&#xD;
+E6IJlMmEYNII7HK6EeSqdnkKQzfq0T/X3IQsIOSWO+iCSXJCrPE3tshjNUAzY0/+amm9VZah7m+J&#xD;
+Jath/JyDSGjmo+XPl4kzMd6c4WYIFlX7qW/5fPocWB3FGvTpWy+BQ52T/V19SgGb/zm6hImQkEUE&#xD;
+moHwmaidWSdnS1QlkfHNRJLTestkwFDXgObdTIBz1rE4uqo2TbbhQSiVlUNiQjjPdOBEBxxIYaMB&#xD;
+2cTCwK+3kEw7BmTtJqxQ81GWh678iDPkLhqSko1qs9Rv/ZLK4lxAzQsltZ/zuz9TpK5ZgDYslpD0&#xD;
+q4TVTSwUPzOnghDLtLcckslV7zAHDJ1/5y/2r/VgpiD7gN098RWhDGme1RmsjIbzJkMeTKhYKbfa&#xD;
+8tT/Fwk/7FGk4agZ6XYG38zh4bEMc2qf+gvFI1sisy+Omb6uXk/j9fEs9hj9OXP40d5vWRKIjuYd&#xD;
+jhYkpvNUBnWKVmJMQele0SGSt04AJcmQTNva513bhml3/urHSs718IRIODfiQvot6AfV6Nf7M6HY&#xD;
+qbEkC0EyH0+NvQpXHyf7HDrupt7KDCikas6L</X509Certificate></X509Data></KeyInfo></Signature><saml2:Subject><saml2:NameID NameQualifier="CPS">899700295274</saml2:NameID></saml2:Subject><saml2:AttributeStatement><saml2:Attribute Name="identifiantFacturation"><AttributeValue xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">001095272</AttributeValue></saml2:Attribute></saml2:AttributeStatement></saml2:Assertion>
+      </oas:Security>
+   </soap:Header>
+   <soap:Body>
+      <urn2:SE_CREEREPRESCR>
+         <urn3:VersionNorme>04.00</urn3:VersionNorme>
+         <urn3:PRESCRIPTION>
+            <urn3:Numero>02ZAG1NL1J5AS7ANFH</urn3:Numero>
+            <urn3:Date>2022-05-09T14:41:26.535Z</urn3:Date>
+            <urn3:Type>PRODUITS_SANTE</urn3:Type>
+            <urn3:NbLignes>2</urn3:NbLignes>
+            <urn3:Consentement>true</urn3:Consentement>
+            <urn3:Domicile>false</urn3:Domicile>
+            <urn3:Urgence>false</urn3:Urgence>
+            <urn3:Militaire>false</urn3:Militaire>
+            <urn3:CONTENUPRESCRIPTION>
+               <!--Zero or more repetitions:-->
+               <urn4:LIGMEDICAMENTEUX>
+                  <urn4:NumLigne>1</urn4:NumLigne>
+                  <urn4:TypeEltPrescrit>01</urn4:TypeEltPrescrit>
+                  <urn4:NbRenouv>0</urn4:NbRenouv>
+                  <urn4:EstEnRapportALD>false</urn4:EstEnRapportALD>
+                  <urn4:EstEnRapportAccident>false</urn4:EstEnRapportAccident>
+                  <urn4:EstEnRapportPrev>false</urn4:EstEnRapportPrev>
+                  <urn4:CIP>3400955473350</urn4:CIP>
+                  <urn4:Specialite>DOLIPRANE 500MG CPR 100</urn4:Specialite>
+                  <urn4:Posologie>500 à 1000 mg/prise 3 fois toutes les 24 heures</urn4:Posologie>
+                  <urn4:EstNonRemb>false</urn4:EstNonRemb>
+                  <urn4:EstNonSub>false</urn4:EstNonSub>
+                  <urn4:EstHorsAMM>false</urn4:EstHorsAMM>
+                  <urn4:TrtAntiBio>false</urn4:TrtAntiBio>
+                  <urn4:RTU>false</urn4:RTU>
+               </urn4:LIGMEDICAMENTEUX>
+               <urn4:LIGDISPOSITIFMEDICAL>
+                  <urn4:NumLigne>2</urn4:NumLigne>
+                  <urn4:NbRenouv>0</urn4:NbRenouv>
+                  <urn4:EstEnRapportALD>false</urn4:EstEnRapportALD>
+                  <urn4:EstEnRapportAccident>false</urn4:EstEnRapportAccident>
+                  <urn4:EstEnRapportPrev>false</urn4:EstEnRapportPrev>
+                  <urn4:EstNonRemb>false</urn4:EstNonRemb>
+                  <urn4:CodeLPP>1215702</urn4:CodeLPP>
+                  <urn4:LibelleLPPLibre>lit médical, lit + 135 kg, forfait de livraison du lit et accessoires</urn4:LibelleLPPLibre>
+               </urn4:LIGDISPOSITIFMEDICAL>
+            </urn3:CONTENUPRESCRIPTION>
+         </urn3:PRESCRIPTION>
+         <urn3:PATIENT>
+            <urn3:Prenom>BRUNO</urn3:Prenom>
+            <urn3:DateNai>1976-01-01</urn3:DateNai>
+         </urn3:PATIENT>
+         <urn3:PRESCRIPTEUR>
+            <urn3:Specialite>01</urn3:Specialite>
+         </urn3:PRESCRIPTEUR>
+      </urn2:SE_CREEREPRESCR>
+   </soap:Body>
+</soap:Envelope>
