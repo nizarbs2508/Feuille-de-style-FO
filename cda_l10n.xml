@@ -4807,7 +4807,7 @@
         <value lang="fr-ch">p</value>
         <value lang="it-ch">C</value>
         <value lang="nl-nl">Vakantieadres</value>
-        <value lang="fr-fr">Vacances</value>
+        <value lang="fr-fr">Lieu de Vacances</value>
     </translation>
     <translation key="addressUse_HP">
         <comment>Label: Home Primary (e.g. address, or telecom type)</comment>
@@ -4825,7 +4825,7 @@
         <value lang="fr-ch">g</value>
         <value lang="it-ch">U</value>
         <value lang="nl-nl">Werk</value>
-        <value lang="fr-fr">Travail</value>
+        <value lang="fr-fr">Lieu de Travail</value>
     </translation>
     <translation key="addressUse_PUB">
         <comment>Label: Workplace Public (e.g. address, telecom type)</comment>
@@ -4834,19 +4834,19 @@
         <value lang="fr-ch">g</value>
         <value lang="it-ch">U</value>
         <value lang="nl-nl">Werk algemeen</value>
-        <value lang="fr-fr">Public</value>
+        <value lang="fr-fr">Numéro Public</value>
     </translation>
     <translation key="addressUse_EC">
         <comment>Label: Emergency Contact (e.g. address, or telecom type)</comment>
         <value lang="en-us">Emergency</value>
         <value lang="nl-nl">Noodgevallen</value>
-        <value lang="fr-fr">Urgence</value>
+        <value lang="fr-fr">Numéro d'urgence</value>
     </translation>
     <translation key="addressUse_MC">
         <comment>Label: Mobile Contact (e.g. telecom type)</comment>
         <value lang="en-us">Mobile</value>
         <value lang="nl-nl">Mobiel</value>
-        <value lang="fr-fr">Mobile</value>
+        <value lang="fr-fr">Téléphone mobile</value>
     </translation>
     <translation key="addressUse_PG">
         <comment>Label: Pager (e.g. telecom type)</comment>
@@ -4880,7 +4880,7 @@
     <translation key="addressUse_DIR">
         <comment>Label: Direct (e.g. address type)</comment>
         <value lang="en-us">Direct</value>
-        <value lang="fr-fr">directe</value>
+        <value lang="fr-fr">Numéro directe</value>
     </translation>
     <translation key="addressUse_BAD">
         <comment>Label: BAD (e.g. address type)</comment>

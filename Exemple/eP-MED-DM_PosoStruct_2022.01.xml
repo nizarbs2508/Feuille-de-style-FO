@@ -74,6 +74,7 @@
         <country>FRANCE</country>
       </addr>
       <!-- Coordonnées télécom du patient -->
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0144534551" use="H"/>
       <telecom value="tel:0647151010" use="MC"/>
       <telecom value="tel:0647151011" use="WP"/>
@@ -83,7 +84,8 @@
       <telecom value="tel:0647151015" use="DIR"/>
       <telecom value="tel:0647151016" use="PUB"/>
       <telecom value="tel:0647151016" use="PG"/>
-      <telecom value="mailto:277076322082910@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082910@patient.mssante.fr" use="HP"/>
+      <telecom value="mailto:277076322082960@patient.mssante.fr" />
       <telecom value="mailto:277076322082950@patient.mssante.fr" use="H"/>
       <!-- Identité du patient -->
       <patient classCode="PSN">
@@ -107,15 +109,18 @@
             <city>PARIS</city>
             <country>FRANCE</country>
           </addr>
+          <telecom value="tel:0111111111"/>
           <telecom value="tel:0144534551" use="H"/>
           <telecom value="tel:0647151010" use="MC"/>
-          <telecom value="tel:0647151011" use="WP"/>
+          <telecom value="tel:0647151077" use="WP"/>
           <telecom value="tel:0000000000" use="EC"/>
           <telecom value="tel:0000000001" use="HP"/>
           <telecom value="tel:0000000002" use="HV"/>
           <telecom value="tel:0000000003" use="DIR"/>
           <telecom value="tel:0000000004" use="PUB"/>
           <telecom value="tel:0000000005" use="PG"/>
+          <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+          <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
           <guardianPerson>
             <name>
               <prefix>MME</prefix>
@@ -156,6 +161,7 @@
         <city>PARIS</city>
       </addr>
       <!-- [0..*] Télécom du PS -->
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:00000300" use="WP"/>
       <telecom value="tel:00000300" use="H"/>
       <telecom value="tel:00000300" use="HP"/>
@@ -165,6 +171,8 @@
       <telecom value="tel:00000300" use="EC"/>
       <telecom value="tel:00000300" use="MC"/>
       <telecom value="tel:00000300" use="PG"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <!-- [0..1] Identité du PS -->
       <assignedPerson>
         <name>
@@ -181,6 +189,7 @@
         <!-- [1..1] Nom de l'organisation de rattachement du PS -->
         <name>Cabinet du DR Pierre JOLI</name>        
         <!-- [0..*] Télécom du PS -->
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:00000300" use="WP"/>
         <telecom value="tel:00000300" use="H"/>
         <telecom value="tel:00000300" use="HP"/>
@@ -190,6 +199,8 @@
         <telecom value="tel:00000300" use="EC"/>
         <telecom value="tel:00000300" use="MC"/>
         <telecom value="tel:00000300" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse du PS -->
         <addr>
           <houseNumber>25</houseNumber>
@@ -204,7 +215,7 @@
   <!-- Personne à prévenir en cas d'urgence -->
   <informant>
     <assignedEntity>
-      <representedOrganization>
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
       <telecom value="tel:0647150102" use="EC"/>
@@ -213,14 +224,31 @@
       <telecom value="tel:0647150105" use="DIR"/>
       <telecom value="tel:0647150106" use="PUB"/>
       <telecom value="tel:0647150107" use="PG"/>
-      <telecom value="tel:0647150107" use="WP"/>
-      </representedOrganization>
-      <relatedPerson>
+      <telecom value="tel:0647150107777" use="WP"/>
+      <telecom value="mailto:test2@mssante.fr" use="EC"/>
+      <telecom value="mailto:tes3@mssante.fr" />
+      <assignedPerson>
         <name>
           <family>NESSI</family>
           <given>Sophie</given>
         </name>
-      </relatedPerson>
+      </assignedPerson>
+      <representedOrganization>
+        <!-- Identifiant de l'organisation -->
+      <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <telecom value="tel:0111111111"/>
+      <telecom value="tel:0647150100" use="MC"/>
+      <telecom value="tel:0647150101" use="H"/>
+      <telecom value="tel:0647150102" use="EC"/>
+      <telecom value="tel:0647150103" use="HP"/>
+      <telecom value="tel:0647150104" use="HV"/>
+      <telecom value="tel:0647150105" use="DIR"/>
+      <telecom value="tel:0647150106" use="PUB"/>
+      <telecom value="tel:0647150107" use="PG"/>
+      <telecom value="tel:0647150107777" use="WP"/>
+        <telecom value="mailto:test2@mssante.fr" use="EC"/>
+        <telecom value="mailto:tes3@mssante.fr" />
+      </representedOrganization>
     </assignedEntity>
   </informant>
 
@@ -229,6 +257,7 @@
     <relatedEntity classCode="CON">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
       <addr nullFlavor="NAV"/>
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
       <telecom value="tel:0647150102" use="EC"/>
@@ -238,6 +267,8 @@
       <telecom value="tel:0647150106" use="PUB"/>
       <telecom value="tel:0647150107" use="PG"/>
       <telecom value="tel:0647150107" use="WP"/>
+      <telecom value="mailto:test@mssante.fr" use="EC"/>
+      <telecom value="mailto:tes1@mssante.fr" />
       <relatedPerson>
         <name>
           <family>NESSI</family>
@@ -251,7 +282,7 @@
     <relatedEntity classCode="CAREGIVER">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
       <addr nullFlavor="NAV"/>
-      <telecom value="tel:0999999100"/>
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150155" use="H"/>
       <telecom value="tel:0647150102" use="EC"/>
       <telecom value="tel:0647150103" use="HP"/>
@@ -260,6 +291,8 @@
       <telecom value="tel:0647150106" use="PUB"/>
       <telecom value="tel:0647150107" use="PG"/>
       <telecom value="tel:0647150107" use="WP"/>
+      <telecom value="tel:0647150107" use="MC"/>
+      <telecom value="mailto:michel.martine@mssante.fr" use="EC"/>
       <telecom value="mailto:michel.martin@mssante.fr" />
       <relatedPerson>
         <name>
@@ -274,6 +307,7 @@
     <relatedEntity classCode="PAT">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
       <addr nullFlavor="NAV"/>
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
       <telecom value="tel:0647150102" use="EC"/>
@@ -283,6 +317,58 @@
       <telecom value="tel:0647150106" use="PUB"/>
       <telecom value="tel:0647150107" use="PG"/>
       <telecom value="tel:0647150107" use="WP"/>
+      <telecom value="mailto:michel.martinert@mssante.fr" use="EC"/>
+      <telecom value="mailto:michel.martinrt@mssante.fr" />
+      <relatedPerson>
+        <name>
+          <family>NESSI</family>
+          <given>Sophie</given>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  
+  <informant>
+    <relatedEntity classCode="NOK">
+      <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
+      <addr nullFlavor="NAV"/>
+      <telecom value="tel:0111111111"/>
+      <telecom value="tel:0647150100" use="MC"/>
+      <telecom value="tel:0647150101" use="H"/>
+      <telecom value="tel:0647150102" use="EC"/>
+      <telecom value="tel:0647150103" use="HP"/>
+      <telecom value="tel:0647150104" use="HV"/>
+      <telecom value="tel:0647150105" use="DIR"/>
+      <telecom value="tel:0647150106" use="PUB"/>
+      <telecom value="tel:0647150107" use="PG"/>
+      <telecom value="tel:0647150107" use="WP"/>
+      <telecom value="mailto:michel.martinertyu@mssante.fr" use="EC"/>
+      <telecom value="mailto:michel.martinrtui@mssante.fr" />
+      <relatedPerson>
+        <name>
+          <family>NESSI</family>
+          <given>Sophie</given>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  
+  <informant>
+    <relatedEntity classCode="ECON">
+      <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
+      <addr nullFlavor="NAV"/>
+      <telecom value="tel:0111111111"/>
+      <telecom value="tel:0647150100" use="MC"/>
+      <telecom value="tel:0647150101" use="H"/>
+      <telecom value="tel:0647150102" use="EC"/>
+      <telecom value="tel:0647150103" use="HP"/>
+      <telecom value="tel:0647150104" use="HV"/>
+      <telecom value="tel:0647150105" use="DIR"/>
+      <telecom value="tel:0647150106" use="PUB"/>
+      <telecom value="tel:0647150107" use="PG"/>
+      <telecom value="tel:0647150107" use="WP"/>
+      <telecom value="mailto:michel.martinertyuPP@mssante.fr" use="EC"/>
+      <telecom value="mailto:michel.martinrtuiPP@mssante.fr" />
       <relatedPerson>
         <name>
           <family>NESSI</family>
@@ -301,6 +387,7 @@
         <!-- Nom de l'organisation -->
         <name>Cabinet du DR Pierre JOLI</name>
         <!-- Coordonnées télécom de l'organisation -->
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -310,6 +397,8 @@
         <telecom value="tel:0158432305" use="EC"/>
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- Adresse de l'organisation -->
         <addr>
           <houseNumber>25</houseNumber>
@@ -331,8 +420,18 @@
         <postalCode>49000</postalCode>
         <city>ANGERS</city>
       </addr>
-      <telecom value="tel:0242353500" use="WP"/>
-      <telecom value="mailto:michel.martin@mssante.fr" />
+      <telecom value="tel:0111111111"/>
+      <telecom value="tel:0158432300" use="WP"/>
+      <telecom value="tel:0158432301" use="H"/>
+      <telecom value="tel:0158432302" use="HP"/>
+      <telecom value="tel:0158432303" use="HV"/>
+      <telecom value="tel:0158432304" use="DIR"/>
+      <telecom value="tel:0158432305" use="PUB"/>
+      <telecom value="tel:0158432305" use="EC"/>
+      <telecom value="tel:0158432306" use="MC"/>
+      <telecom value="tel:0158432307" use="PG"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <informationRecipient>
         <name>
           <given>Michel</given>
@@ -344,7 +443,18 @@
       <receivedOrganization>
         <id root="1.2.250.1.71.4.2.2" extension="1490012345"/>
         <name>Laboratoire de génétique moléculaire d'Angers</name>
-        <telecom value="tel:0242353500" use="WP"/>
+        <telecom value="tel:0111111111"/>
+        <telecom value="tel:0158432300" use="WP"/>
+        <telecom value="tel:0158432301" use="H"/>
+        <telecom value="tel:0158432302" use="HP"/>
+        <telecom value="tel:0158432303" use="HV"/>
+        <telecom value="tel:0158432304" use="DIR"/>
+        <telecom value="tel:0158432305" use="PUB"/>
+        <telecom value="tel:0158432305" use="EC"/>
+        <telecom value="tel:0158432306" use="MC"/>
+        <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <addr>              
           <houseNumber>10</houseNumber>
           <streetName>Bd Pasteur</streetName>
@@ -368,6 +478,7 @@
         <city>BOULOGNE-BILLANCOURT</city>
         <country>FRANCE</country>
       </addr>
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
       <telecom value="tel:0158432301" use="H"/>
       <telecom value="tel:0158432302" use="HP"/>
@@ -377,7 +488,8 @@
       <telecom value="tel:0158432305" use="EC"/>
       <telecom value="tel:0158432306" use="MC"/>
       <telecom value="tel:0158432307" use="PG"/>
-      <telecom value="mailto:jacques-andre@mssante.fr"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <assignedPerson>
         <name>
           <prefix>M</prefix>
@@ -389,6 +501,7 @@
       <representedOrganization>
         <id root="1.2.250.1.71.4.2.2" extension="101238887"/>
         <name>Centre de soins du Belvédère</name>				
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -399,6 +512,8 @@
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
         <telecom value="mailto:centre-sante-belvedaire@mssante.fr"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr" use="HV"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <addr>
           <houseNumber>142</houseNumber>
           <streetName>Rue Belvédère</streetName>
@@ -423,6 +538,7 @@
         <postalCode>49933</postalCode>
         <city>ANGERS</city>
       </addr>      
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
       <telecom value="tel:0158432301" use="H"/>
       <telecom value="tel:0158432302" use="HP"/>
@@ -433,6 +549,8 @@
       <telecom value="tel:0158432306" use="MC"/>
       <telecom value="tel:0158432307" use="PG"/>
       <telecom value="mailto:celine.lambert@mssante.fr"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <informationRecipient>
         <name>
           <prefix>MME</prefix>
@@ -444,6 +562,7 @@
       <receivedOrganization>
         <id root="1.2.250.1.71.4.2.2" extension="1490000049"/>
         <name>Centre Hospitalier Régional d'Angers</name>
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -453,6 +572,8 @@
         <telecom value="tel:0158432305" use="EC"/>
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <addr>
           <houseNumber>4</houseNumber>
           <streetName>Rue Larrey</streetName>
@@ -482,7 +603,18 @@
         <city>PARIS</city>
       </addr>
       <!-- Coordonnées télécom du PS-->
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
+      <telecom value="tel:0158432301" use="H"/>
+      <telecom value="tel:0158432302" use="HP"/>
+      <telecom value="tel:0158432303" use="HV"/>
+      <telecom value="tel:0158432304" use="DIR"/>
+      <telecom value="tel:0158432305" use="PUB"/>
+      <telecom value="tel:0158432305" use="EC"/>
+      <telecom value="tel:0158432306" use="MC"/>
+      <telecom value="tel:0158432307" use="PG"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <!-- Identité du PS -->
       <assignedPerson>
         <name>
@@ -494,6 +626,7 @@
       </assignedPerson>
       <!-- Etablissement de rattachement du PS -->
       <representedOrganization>
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -503,6 +636,8 @@
         <telecom value="tel:0158432305" use="EC"/>
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
         <name>Cabinet du DR Pierre JOLI</name>
         <addr>
@@ -529,7 +664,18 @@
         <postalCode>92100</postalCode>
         <city>BOULOGNE-BILLANCOURT</city>
       </addr>
-      <telecom value="tel:0174589607" use="WP"/>
+      <telecom value="tel:0111111111"/>
+      <telecom value="tel:0158432300" use="WP"/>
+      <telecom value="tel:0158432301" use="H"/>
+      <telecom value="tel:0158432302" use="HP"/>
+      <telecom value="tel:0158432303" use="HV"/>
+      <telecom value="tel:0158432304" use="DIR"/>
+      <telecom value="tel:0158432305" use="PUB"/>
+      <telecom value="tel:0158432305" use="EC"/>
+      <telecom value="tel:0158432306" use="MC"/>
+      <telecom value="tel:0158432307" use="PG"/>
+      <telecom value="mailto:277076322082995@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082985@patient.mssante.fr" use="H"/>
       <assignedPerson>
         <name>
           <prefix>M</prefix>
@@ -545,6 +691,7 @@
         <!-- Nom de l'organisation -->
         <name>Laboratoire des charmes</name>
         <!-- Coordonnées télécom de l'organisation -->
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -554,6 +701,8 @@
         <telecom value="tel:0158432305" use="EC"/>
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- Adresse de l'organisation -->
         <addr>
           <houseNumber>8</houseNumber>
@@ -585,6 +734,7 @@
         <city>PARIS</city>
       </addr>
       <!-- [0..*] Télécom du PS -->
+      <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
       <telecom value="tel:0158432301" use="H"/>
       <telecom value="tel:0158432302" use="HP"/>
@@ -594,6 +744,8 @@
       <telecom value="tel:0158432305" use="EC"/>
       <telecom value="tel:0158432306" use="MC"/>
       <telecom value="tel:0158432307" use="PG"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <!-- [0..1] Identité du PS -->
       <associatedPerson>
         <name>
@@ -610,6 +762,7 @@
         <!-- [1..1] Nom de l'organisation de rattachement du PS -->
         <name>Cabinet du DR Pierre JOLI</name>        
         <!-- [0..*] Télécom du PS -->
+        <telecom value="tel:0111111111"/>
         <telecom value="tel:0158432300" use="WP"/>
         <telecom value="tel:0158432301" use="H"/>
         <telecom value="tel:0158432302" use="HP"/>
@@ -619,6 +772,8 @@
         <telecom value="tel:0158432305" use="EC"/>
         <telecom value="tel:0158432306" use="MC"/>
         <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse du PS -->
         <addr>
           <houseNumber>25</houseNumber>
@@ -650,7 +805,18 @@
         <city>PARIS</city>
       </addr>
       <!-- [0..*] Coordonnées télécom du PS-->
-      <telecom value="tel:0158410697" use="WP"/>
+      <telecom value="tel:0111111111"/>
+      <telecom value="tel:0158432300" use="WP"/>
+      <telecom value="tel:0158432301" use="H"/>
+      <telecom value="tel:0158432302" use="HP"/>
+      <telecom value="tel:0158432303" use="HV"/>
+      <telecom value="tel:0158432304" use="DIR"/>
+      <telecom value="tel:0158432305" use="PUB"/>
+      <telecom value="tel:0158432305" use="EC"/>
+      <telecom value="tel:0158432306" use="MC"/>
+      <telecom value="tel:0158432307" use="PG"/>
+      <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+      <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
       <!-- [0..1] Identité du PS -->
       <associatedPerson>
         <name>
@@ -667,7 +833,18 @@
         <!-- [0..1] Nom de l'organisation -->
         <name>Pharmacie SAMPAIX</name>
         <!-- [0..*] Coordonnées télécom de l'organisation -->
-        <telecom value="tel:0158410697" use="WP"/>
+        <telecom value="tel:0111111111"/>
+        <telecom value="tel:0158432300" use="WP"/>
+        <telecom value="tel:0158432301" use="H"/>
+        <telecom value="tel:0158432302" use="HP"/>
+        <telecom value="tel:0158432303" use="HV"/>
+        <telecom value="tel:0158432304" use="DIR"/>
+        <telecom value="tel:0158432305" use="PUB"/>
+        <telecom value="tel:0158432305" use="EC"/>
+        <telecom value="tel:0158432306" use="MC"/>
+        <telecom value="tel:0158432307" use="PG"/>
+        <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+        <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse de l'organisation -->
         <addr>
           <houseNumber>12</houseNumber>
@@ -708,6 +885,7 @@
             <city>PARIS</city>
           </addr>
           <!-- Coordonnées Télécom du PS -->
+          <telecom value="tel:0111111111"/>
           <telecom value="tel:0158432300" use="WP"/>
           <telecom value="tel:0158432301" use="H"/>
           <telecom value="tel:0158432302" use="HP"/>
@@ -717,6 +895,8 @@
           <telecom value="tel:0158432305" use="EC"/>
           <telecom value="tel:0158432306" use="MC"/>
           <telecom value="tel:0158432307" use="PG"/>
+          <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+          <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
           <!-- Identité du PS -->
           <assignedPerson>
             <name>
@@ -731,6 +911,7 @@
             <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
             <name>Cabinet du DR Pierre JOLI</name>
             <!-- [0..*] Télécom du PS -->
+            <telecom value="tel:0111111111"/>
             <telecom value="tel:0158432300" use="WP"/>
             <telecom value="tel:0158432301" use="H"/>
             <telecom value="tel:0158432302" use="HP"/>
@@ -740,6 +921,8 @@
             <telecom value="tel:0158432305" use="EC"/>
             <telecom value="tel:0158432306" use="MC"/>
             <telecom value="tel:0158432307" use="PG"/>
+            <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+            <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
             <!-- [0..*] Adresse du PS -->
             <addr>
               <houseNumber>25</houseNumber>
@@ -834,6 +1017,7 @@
             <city>PARIS</city>
           </addr>
           <!-- Coordonnées télécom du PS-->
+          <telecom value="tel:0100000000"/>
           <telecom value="tel:0158432300" use="WP"/>
           <telecom value="tel:0158432301" use="H"/>
           <telecom value="tel:0158432302" use="HP"/>
@@ -843,6 +1027,8 @@
           <telecom value="tel:0158432305" use="EC"/>
           <telecom value="tel:0158432306" use="MC"/>
           <telecom value="tel:0158432307" use="PG"/>
+          <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+          <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
           <!-- Identité du PS -->
           <assignedPerson>
             <name>
@@ -862,7 +1048,8 @@
               <postalCode>75015</postalCode>
               <city>PARIS</city>
             </addr>
-            <telecom value="tel:0158432300" use="WP"/>
+            <telecom value="tel:0100000000"/>
+            <telecom value="tel:01584326600" use="WP"/>
             <telecom value="tel:0158432301" use="H"/>
             <telecom value="tel:0158432302" use="HP"/>
             <telecom value="tel:0158432303" use="HV"/>
@@ -871,6 +1058,8 @@
             <telecom value="tel:0158432305" use="EC"/>
             <telecom value="tel:0158432306" use="MC"/>
             <telecom value="tel:0158432307" use="PG"/>
+            <telecom value="mailto:277076322082955@patient.mssante.fr"/>
+            <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
             <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé"
               codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
           </representedOrganization>
