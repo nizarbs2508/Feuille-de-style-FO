@@ -1646,6 +1646,12 @@
         <value lang="nl-nl">Contactgegevens</value>
         <value lang="fr-fr">Contact</value>
     </translation>
+    <translation key="Contact_principal">
+        <comment>Label: Contact details</comment>
+        <value lang="en-us">Main residence adress</value>
+        <value lang="nl-nl">Hoofdverblijf adres</value>
+        <value lang="fr-fr">Adresse (Domicile principal)</value>
+    </translation>
     <translation key="Contact_domicile">
         <comment>Label: Contact details</comment>
         <value lang="en-us">Home adress</value>
@@ -1660,57 +1666,57 @@
     </translation>
     <translation key="Tel_domicile">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Home Phone</value>
-        <value lang="nl-nl">Huis Telefoon</value>
-        <value lang="fr-fr">Tel (Domicile)</value>
+        <value lang="en-us">Home</value>
+        <value lang="nl-nl">Huis</value>
+        <value lang="fr-fr">Domicile</value>
     </translation>
     <translation key="Tel_urgence">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Emergency Phone</value>
-        <value lang="nl-nl">Noodgeval Telefoon</value>
-        <value lang="fr-fr">Tel (Urgence)</value>
+        <value lang="en-us">Emergency</value>
+        <value lang="nl-nl">Noodgeval</value>
+        <value lang="fr-fr">Urgence</value>
     </translation>
     <translation key="Tel_travail">
         <comment>Label: Contact details tel travail</comment>
-        <value lang="en-us">Tel (Work)</value>
-        <value lang="nl-nl">Telefoon (werk)</value>
-        <value lang="fr-fr">Tel (Travail)</value>
+        <value lang="en-us">Work</value>
+        <value lang="nl-nl">werk</value>
+        <value lang="fr-fr">Travail</value>
     </translation>
     <translation key="Tel_mobile">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Mobile Phone</value>
-        <value lang="nl-nl">Mobiele Telefoon</value>
-        <value lang="fr-fr">Tel (Mobile)</value>
+        <value lang="en-us">Mobile</value>
+        <value lang="nl-nl">Mobiele</value>
+        <value lang="fr-fr">Mobile</value>
     </translation>
     <translation key="Tel_domicile_principal">
         <comment>Label: Contact details</comment>
         <value lang="en-us">Home Primary</value>
         <value lang="nl-nl">Thuis primair</value>
-        <value lang="fr-fr">Tel (Domicile principal)</value>
+        <value lang="fr-fr">Domicile principal</value>
     </translation>
     <translation key="Tel_domicile_vaccance">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Phone (Holiday location)</value>
-        <value lang="nl-nl">Telefoon (Vakantielocatie)</value>
-        <value lang="fr-fr">Tel (Lieu de vacances)</value>
+        <value lang="en-us">Holiday location</value>
+        <value lang="nl-nl">Vakantielocatie</value>
+        <value lang="fr-fr">Lieu de vacances</value>
     </translation>
     <translation key="Tel_domicile_numero_direct">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Phone (Direct number)</value>
-        <value lang="nl-nl">Telefoon (Direct nummer)</value>
-        <value lang="fr-fr">Tel (Numéro direct)</value>
+        <value lang="en-us">Direct number</value>
+        <value lang="nl-nl">Direct nummer</value>
+        <value lang="fr-fr">Numéro direct</value>
     </translation>
     <translation key="Tel_domicile_numero_public">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Phone (Public number)</value>
-        <value lang="nl-nl">Telefoon (Public nummer)</value>
-        <value lang="fr-fr">Tel (Numéro public)</value>
+        <value lang="en-us">Public number</value>
+        <value lang="nl-nl">Public nummer</value>
+        <value lang="fr-fr">Numéro public</value>
     </translation>
     <translation key="Tel_domicile_numero_beeper">
         <comment>Label: Contact details</comment>
-        <value lang="en-us">Phone (Beeper)</value>
-        <value lang="nl-nl">Telefoon (Pieper)</value>
-        <value lang="fr-fr">Tel (Beeper)</value>
+        <value lang="en-us">Beeper</value>
+        <value lang="nl-nl">Pieper</value>
+        <value lang="fr-fr">Pager</value>
     </translation>
     <translation key="Diagnostic Radiology">
         <comment>Label: Diagnostic Radiology</comment>
@@ -4807,7 +4813,7 @@
         <value lang="fr-ch">p</value>
         <value lang="it-ch">C</value>
         <value lang="nl-nl">Vakantieadres</value>
-        <value lang="fr-fr">Lieu de Vacances</value>
+        <value lang="fr-fr">Domicile de vacances</value>
     </translation>
     <translation key="addressUse_HP">
         <comment>Label: Home Primary (e.g. address, or telecom type)</comment>
@@ -4825,7 +4831,7 @@
         <value lang="fr-ch">g</value>
         <value lang="it-ch">U</value>
         <value lang="nl-nl">Werk</value>
-        <value lang="fr-fr">Lieu de Travail</value>
+        <value lang="fr-fr">Travail</value>
     </translation>
     <translation key="addressUse_PUB">
         <comment>Label: Workplace Public (e.g. address, telecom type)</comment>
@@ -4840,13 +4846,13 @@
         <comment>Label: Emergency Contact (e.g. address, or telecom type)</comment>
         <value lang="en-us">Emergency</value>
         <value lang="nl-nl">Noodgevallen</value>
-        <value lang="fr-fr">Numéro d'urgence</value>
+        <value lang="fr-fr">Urgence</value>
     </translation>
     <translation key="addressUse_MC">
         <comment>Label: Mobile Contact (e.g. telecom type)</comment>
         <value lang="en-us">Mobile</value>
         <value lang="nl-nl">Mobiel</value>
-        <value lang="fr-fr">Téléphone mobile</value>
+        <value lang="fr-fr">Mobile</value>
     </translation>
     <translation key="addressUse_PG">
         <comment>Label: Pager (e.g. telecom type)</comment>
@@ -4863,7 +4869,7 @@
         <comment>Label: Temporary (e.g. address type)</comment>
         <value lang="en-us">Temporary</value>
         <value lang="nl-nl">Tijdelijk</value>
-        <value lang="fr-fr">temporaire</value>
+        <value lang="fr-fr">Adresse temporaire</value>
     </translation>
     <translation key="addressUse_CONF">
         <comment>Label: Confidential (e.g. address type)</comment>

@@ -73,6 +73,51 @@
         <city>PARIS</city>
         <country>FRANCE</country>
       </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <!-- Coordonnées télécom du patient -->
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0144534551" use="H"/>
@@ -84,8 +129,8 @@
       <telecom value="tel:0647151015" use="DIR"/>
       <telecom value="tel:0647151016" use="PUB"/>
       <telecom value="tel:0647151016" use="PG"/>
-      <telecom value="mailto:277076322082910@patient.mssante.fr" use="HP"/>
       <telecom value="mailto:277076322082960@patient.mssante.fr" />
+      <telecom value="mailto:277076322082910@patient.mssante.fr" use="HP"/>
       <telecom value="mailto:277076322082950@patient.mssante.fr" use="H"/>
       <!-- Identité du patient -->
       <patient classCode="PSN">
@@ -100,8 +145,52 @@
         <birthTime value="19770714"/>
         <!-- Représentant du patient -->
         <guardian>
-          <addr use="H">
+          <addr>
             <houseNumber>28</houseNumber>
+            <streetName>Avenue de Breteuil</streetName>
+            <unitID>Escalier A</unitID>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="H">
+            <houseNumber>27</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="TMP">
+            <houseNumber>29</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="WP">
+            <houseNumber>26</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HP">
+            <houseNumber>30</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HV">
+            <houseNumber>25</houseNumber>
             <streetNameType>Av</streetNameType>
             <streetName>de Breteuil</streetName>
             <additionalLocator nullFlavor="NA"/>
@@ -155,10 +244,57 @@
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <!-- [0..*] Adresse du PS -->
       <addr>
-        <houseNumber>25</houseNumber>
-        <streetName>Rue Berthollet</streetName>
-        <postalCode>75005</postalCode>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
         <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <!-- [0..*] Télécom du PS -->
       <telecom value="tel:0111111111"/>
@@ -203,10 +339,57 @@
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse du PS -->
         <addr>
-          <houseNumber>25</houseNumber>
-          <streetName>Rue Berthollet</streetName>
-          <postalCode>75005</postalCode>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
           <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </representedOrganization>
     </assignedAuthor>
@@ -215,6 +398,59 @@
   <!-- Personne à prévenir en cas d'urgence -->
   <informant>
     <assignedEntity>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -236,6 +472,59 @@
       <representedOrganization>
         <!-- Identifiant de l'organisation -->
       <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
+        <addr>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
         <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -256,7 +545,59 @@
   <informant>
     <relatedEntity classCode="CON">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
-      <addr nullFlavor="NAV"/>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -271,7 +612,7 @@
       <telecom value="mailto:tes1@mssante.fr" />
       <relatedPerson>
         <name>
-          <family>NESSI</family>
+          <family>NESSI N</family>
           <given>Sophie</given>
         </name>
       </relatedPerson>
@@ -281,7 +622,59 @@
   <informant>
     <relatedEntity classCode="CAREGIVER">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
-      <addr nullFlavor="NAV"/>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150155" use="H"/>
       <telecom value="tel:0647150102" use="EC"/>
@@ -306,7 +699,59 @@
   <informant>
     <relatedEntity classCode="PAT">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
-      <addr nullFlavor="NAV"/>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -331,7 +776,59 @@
   <informant>
     <relatedEntity classCode="NOK">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
-      <addr nullFlavor="NAV"/>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -356,7 +853,59 @@
   <informant>
     <relatedEntity classCode="ECON">
       <code code="SIS" displayName="Soeur" codeSystem="2.16.840.1.113883.5.111"/>
-      <addr nullFlavor="NAV"/>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0647150100" use="MC"/>
       <telecom value="tel:0647150101" use="H"/>
@@ -401,10 +950,57 @@
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- Adresse de l'organisation -->
         <addr>
-          <houseNumber>25</houseNumber>
-          <streetName>Rue Berthollet</streetName>
-          <postalCode>75005</postalCode>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
           <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </representedCustodianOrganization>
     </assignedCustodian>
@@ -414,11 +1010,58 @@
   <informationRecipient>
     <intendedRecipient>
       <id root="1.2.250.1.71.4.2.1" extension="800100200300" />
-      <addr>              
-        <houseNumber>10</houseNumber>
-        <streetName>Bd Pasteur</streetName>
-        <postalCode>49000</postalCode>
-        <city>ANGERS</city>
+      <addr>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
@@ -455,11 +1098,58 @@
         <telecom value="tel:0158432307" use="PG"/>
         <telecom value="mailto:277076322082955@patient.mssante.fr"/>
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
-        <addr>              
-          <houseNumber>10</houseNumber>
-          <streetName>Bd Pasteur</streetName>
-          <postalCode>49000</postalCode>
-          <city>ANGERS</city>
+        <addr>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </receivedOrganization>
     </intendedRecipient>
@@ -472,10 +1162,56 @@
       <code code="G15_10/SM26" codeSystem="1.2.250.1.213.1.1.4.5"
         displayName="Médecin - Qualifié en Médecin Générale (SM)"/> 
       <addr>
-        <houseNumber>142</houseNumber>
-        <streetName>Rue Belvédère</streetName>
-        <postalCode>92100</postalCode>
-        <city>BOULOGNE-BILLANCOURT</city>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
         <country>FRANCE</country>
       </addr>
       <telecom value="tel:0111111111"/>
@@ -515,10 +1251,56 @@
         <telecom value="mailto:277076322082955@patient.mssante.fr" use="HV"/>
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <addr>
-          <houseNumber>142</houseNumber>
-          <streetName>Rue Belvédère</streetName>
-          <postalCode>92100</postalCode>
-          <city>BOULOGNE-BILLANCOURT</city>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
           <country>FRANCE</country>
         </addr>
         <standardIndustryClassCode code="ETABLISSEMENT"
@@ -533,11 +1315,58 @@
     <intendedRecipient>
       <id root="1.2.250.1.71.4.2.1" extension="801101201301" />    
       <addr>
-        <houseNumber>4</houseNumber>
-        <streetName>Rue Larrey</streetName>
-        <postalCode>49933</postalCode>
-        <city>ANGERS</city>
-      </addr>      
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
       <telecom value="tel:0158432301" use="H"/>
@@ -575,10 +1404,57 @@
         <telecom value="mailto:277076322082955@patient.mssante.fr"/>
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <addr>
-          <houseNumber>4</houseNumber>
-          <streetName>Rue Larrey</streetName>
-          <postalCode>49933</postalCode>
-          <city>ANGERS</city>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </receivedOrganization>
     </intendedRecipient>
@@ -597,10 +1473,57 @@
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <!-- Adresse du PS-->
       <addr>
-        <houseNumber>25</houseNumber>
-        <streetName>Rue Berthollet</streetName>
-        <postalCode>75005</postalCode>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
         <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <!-- Coordonnées télécom du PS-->
       <telecom value="tel:0111111111"/>
@@ -641,10 +1564,57 @@
         <id root="1.2.250.1.71.4.2.2" extension="1750512345"/>
         <name>Cabinet du DR Pierre JOLI</name>
         <addr>
-          <houseNumber>25</houseNumber>
-          <streetName>Rue Berthollet</streetName>
-          <postalCode>75005</postalCode>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
           <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
         <standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire"
           codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
@@ -659,10 +1629,57 @@
     <assignedEntity>
       <id root="1.2.250.1.71.4.2.1" extension="801234567898"/>
       <addr>
-        <houseNumber>8</houseNumber>
-        <streetName>Rue Frédéric Bastia</streetName>
-        <postalCode>92100</postalCode>
-        <city>BOULOGNE-BILLANCOURT</city>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <telecom value="tel:0111111111"/>
       <telecom value="tel:0158432300" use="WP"/>
@@ -705,10 +1722,57 @@
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- Adresse de l'organisation -->
         <addr>
-          <houseNumber>8</houseNumber>
-          <streetName>Rue Frédéric Bastia</streetName>
-          <postalCode>92100</postalCode>
-          <city>BOULOGNE-BILLANCOURT</city>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
         <standardIndustryClassCode code="ETABLISSEMENT" displayName="Etablissement de santé"
           codeSystem="1.2.250.1.213.1.1.4.9" codeSystemName="practiceSettingCode"/>
@@ -728,10 +1792,57 @@
         codeSystem="1.2.250.1.213.1.1.4.5"/>
       <!-- [0..*] Adresse du PS -->
       <addr>
-        <houseNumber>25</houseNumber>
-        <streetName>Rue Berthollet</streetName>
-        <postalCode>75005</postalCode>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
         <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <!-- [0..*] Télécom du PS -->
       <telecom value="tel:0111111111"/>
@@ -776,10 +1887,57 @@
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse du PS -->
         <addr>
-          <houseNumber>25</houseNumber>
-          <streetName>Rue Berthollet</streetName>
-          <postalCode>75005</postalCode>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
           <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </scopingOrganization>
     </associatedEntity>    
@@ -799,10 +1957,57 @@
       <code code="G15_21/A" displayName="Pharmacien titulaire d'officine" codeSystem="1.2.250.1.213.1.1.4.5"/>
       <!-- [0..*] Adresse du PS-->
       <addr>
-        <houseNumber>12</houseNumber>
-        <streetName>Rue des produits de santé</streetName>
-        <postalCode>75005</postalCode>
+        <houseNumber>28</houseNumber>
+        <streetName>Avenue de Breteuil</streetName>
+        <unitID>Escalier A</unitID>
+        <postalCode>75007</postalCode>
         <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="H">
+        <houseNumber>27</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="TMP">
+        <houseNumber>29</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="WP">
+        <houseNumber>26</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HP">
+        <houseNumber>30</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
+      </addr>
+      <addr use="HV">
+        <houseNumber>25</houseNumber>
+        <streetNameType>Av</streetNameType>
+        <streetName>de Breteuil</streetName>
+        <additionalLocator nullFlavor="NA"/>
+        <postalCode>75007</postalCode>
+        <city>PARIS</city>
+        <country>FRANCE</country>
       </addr>
       <!-- [0..*] Coordonnées télécom du PS-->
       <telecom value="tel:0111111111"/>
@@ -847,10 +2052,57 @@
         <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
         <!-- [0..*] Adresse de l'organisation -->
         <addr>
-          <houseNumber>12</houseNumber>
-          <streetName>Rue des produits de santé</streetName>
-          <postalCode>75005</postalCode>
+          <houseNumber>28</houseNumber>
+          <streetName>Avenue de Breteuil</streetName>
+          <unitID>Escalier A</unitID>
+          <postalCode>75007</postalCode>
           <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="H">
+          <houseNumber>27</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="TMP">
+          <houseNumber>29</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="WP">
+          <houseNumber>26</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HP">
+          <houseNumber>30</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
+        </addr>
+        <addr use="HV">
+          <houseNumber>25</houseNumber>
+          <streetNameType>Av</streetNameType>
+          <streetName>de Breteuil</streetName>
+          <additionalLocator nullFlavor="NA"/>
+          <postalCode>75007</postalCode>
+          <city>PARIS</city>
+          <country>FRANCE</country>
         </addr>
       </scopingOrganization>
     </associatedEntity>    
@@ -879,10 +2131,57 @@
             codeSystem="1.2.250.1.213.1.1.4.5"/>
           <!-- Adresse du PS -->
           <addr>
-            <houseNumber>25</houseNumber>
-            <streetName>Rue Berthollet</streetName>
-            <postalCode>75005</postalCode>
+            <houseNumber>28</houseNumber>
+            <streetName>Avenue de Breteuil</streetName>
+            <unitID>Escalier A</unitID>
+            <postalCode>75007</postalCode>
             <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="H">
+            <houseNumber>27</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="TMP">
+            <houseNumber>29</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="WP">
+            <houseNumber>26</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HP">
+            <houseNumber>30</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HV">
+            <houseNumber>25</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
           </addr>
           <!-- Coordonnées Télécom du PS -->
           <telecom value="tel:0111111111"/>
@@ -925,10 +2224,57 @@
             <telecom value="mailto:277076322082965@patient.mssante.fr" use="H"/>
             <!-- [0..*] Adresse du PS -->
             <addr>
-              <houseNumber>25</houseNumber>
-              <streetName>Rue Berthollet</streetName>
-              <postalCode>75005</postalCode>
+              <houseNumber>28</houseNumber>
+              <streetName>Avenue de Breteuil</streetName>
+              <unitID>Escalier A</unitID>
+              <postalCode>75007</postalCode>
               <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="H">
+              <houseNumber>27</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="TMP">
+              <houseNumber>29</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="WP">
+              <houseNumber>26</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="HP">
+              <houseNumber>30</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="HV">
+              <houseNumber>25</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
             </addr>
             <!-- Cadre d'exercice du PS -->
             <standardIndustryClassCode code="AMBULATOIRE" displayName="Ambulatoire"
@@ -1011,10 +2357,57 @@
             displayName="Médecin - Qualifié en Médecin Générale (SM)"/>
           <!-- Adresse du PS-->
           <addr>
-            <houseNumber>20</houseNumber>
-            <streetName>Rue Leblanc</streetName>
-            <postalCode>75015</postalCode>
+            <houseNumber>28</houseNumber>
+            <streetName>Avenue de Breteuil</streetName>
+            <unitID>Escalier A</unitID>
+            <postalCode>75007</postalCode>
             <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="H">
+            <houseNumber>27</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="TMP">
+            <houseNumber>29</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="WP">
+            <houseNumber>26</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HP">
+            <houseNumber>30</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
+          </addr>
+          <addr use="HV">
+            <houseNumber>25</houseNumber>
+            <streetNameType>Av</streetNameType>
+            <streetName>de Breteuil</streetName>
+            <additionalLocator nullFlavor="NA"/>
+            <postalCode>75007</postalCode>
+            <city>PARIS</city>
+            <country>FRANCE</country>
           </addr>
           <!-- Coordonnées télécom du PS-->
           <telecom value="tel:0100000000"/>
@@ -1043,10 +2436,57 @@
             <id root="1.2.250.1.71.4.2.2" extension="1750803447"/>
             <name>Hôpital Européen Georges Pompidou</name>
             <addr>
-              <houseNumber>20</houseNumber>
-              <streetName>Rue Leblanc</streetName>
-              <postalCode>75015</postalCode>
+              <houseNumber>28</houseNumber>
+              <streetName>Avenue de Breteuil</streetName>
+              <unitID>Escalier A</unitID>
+              <postalCode>75007</postalCode>
               <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="H">
+              <houseNumber>27</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="TMP">
+              <houseNumber>29</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="WP">
+              <houseNumber>26</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="HP">
+              <houseNumber>30</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
+            </addr>
+            <addr use="HV">
+              <houseNumber>25</houseNumber>
+              <streetNameType>Av</streetNameType>
+              <streetName>de Breteuil</streetName>
+              <additionalLocator nullFlavor="NA"/>
+              <postalCode>75007</postalCode>
+              <city>PARIS</city>
+              <country>FRANCE</country>
             </addr>
             <telecom value="tel:0100000000"/>
             <telecom value="tel:01584326600" use="WP"/>
