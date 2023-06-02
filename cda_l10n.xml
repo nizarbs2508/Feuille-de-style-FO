@@ -1729,6 +1729,11 @@
         <value lang="en-us">Consultant</value>
         <value lang="fr-fr">Consultant</value>
     </translation>
+    <translation key="default">
+        <comment>Label: default value</comment>
+        <value lang="en-us">Default value</value>
+        <value lang="fr-fr">Valeur par defaut</value>
+    </translation>
     <translation key="Cannot display the text">
         <comment>Label: Cannot display the text</comment>
         <value lang="en-us">Cannot display the text</value>
