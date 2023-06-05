@@ -14818,6 +14818,7 @@
                                     <xsl:text>]</xsl:text>
                                     <br/>
                                 </xsl:if>
+                                <br/>
                                 <xsl:if
                                     test="hl7:legalAuthenticator/hl7:assignedEntity/hl7:representedOrganization/hl7:addr">
                                     <xsl:call-template name="show-address-set">
@@ -14827,6 +14828,7 @@
                                     </xsl:call-template>
                                     <br/>
                                 </xsl:if>
+                                <br/>
                                 <xsl:variable name="telExist">
                                     <xsl:call-template name="show-telInfo">
                                         <xsl:with-param name="contact"
@@ -15010,6 +15012,7 @@
                                     </xsl:call-template>
                                     <br/>
                                 </xsl:if>
+                                <br/>
                                 <xsl:for-each
                                     select="hl7:legalAuthenticator/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom[starts-with(@value, 'mailto')]">
                                     <xsl:if test=".">
