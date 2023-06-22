@@ -16583,10 +16583,9 @@
         <xsl:param name="numEPrescription" />
         <!-- réference number -->
         <xsl:variable name="refNumber" select="2"/>
-        <xsl:variable name="year" select="substring($effectiveTime, 1, 4)"/>
+       <!-- <xsl:variable name="year" select="substring($effectiveTime, 1, 4)"/>
         <xsl:variable name="month" select="substring($effectiveTime, 5, 2)"/>
         <xsl:variable name="day" select="substring($effectiveTime, 7, 2)"/>
-        <!-- Heure de prescription -->
         <xsl:variable name="heure">
             <xsl:if test="string-length($effectiveTime) > 8">
                 <xsl:value-of select="substring($effectiveTime, 9, 2)"/>
@@ -16646,9 +16645,7 @@
             </xsl:call-template>
         </xsl:variable>
         <xsl:variable name="duration" select="$end - $start"/>
-        <!-- nombre de jours -->
         <xsl:variable name="dayNumber" select="floor($duration div 86400)"/>
-        <!-- La date de prescription est exprimée en nombre de jours depuis une date fixe -->
         <xsl:variable name="convertedDate">
             <xsl:call-template name="convertToBase32">
                 <xsl:with-param name="data" select="$dayNumber"/>
@@ -16658,7 +16655,6 @@
         <xsl:variable name="time">
             <xsl:value-of select="($heure * 60 * 60 * 10) + ($minute * 60 * 10) + ($second * 10)"/>
         </xsl:variable>
-        <!-- L’heure de prescription est exprimée en nombre de dixièmes de secondes -->
         <xsl:variable name="convertedTime">
             <xsl:call-template name="convertToBase32">
                 <xsl:with-param name="data" select="$time"/>
@@ -16671,7 +16667,6 @@
                     select="substring-before(substring-after($today, 'T'), '+')"/>
             </xsl:call-template>
         </xsl:variable>
-        <!-- nombre de millisecondes écoulées depuis le début de la journée -->
         <xsl:variable name="convertedTimeMS">
             <xsl:call-template name="convertToBase32">
                 <xsl:with-param name="data" select="$timeEnMS"/>
@@ -16696,19 +16691,22 @@
                 <xsl:value-of select="translate($random, 'abcdefghijklmnopqrstuvwxyz', '')"/>
             </xsl:if>
         </xsl:variable>
-        <!-- nombre aléatoire entre 1 et 999999 -->
         <xsl:variable name="convertedRandom">
             <xsl:call-template name="convertToBase32">
                 <xsl:with-param name="data" select="$finalRandom"/>
                 <xsl:with-param name="maxcountDatePre" select="5"/>
             </xsl:call-template>
         </xsl:variable>
-        <!-- identifiant unique de la prescription -->
         <xsl:variable name="uniqueIdPresc">
             <xsl:value-of
                 select="concat($convertedDate, $convertedTime, $convertedTimeMS, $convertedRandom)"
             />
+        </xsl:variable>-->
+        
+        <xsl:variable name="uniqueIdPresc">
+            <xsl:value-of select="hl7:documentationOf/hl7:serviceEvent/hl7:id/@extension"/>
         </xsl:variable>
+        
         <xsl:variable name="spaceName100">
             <xsl:call-template name="repeatable100">
                 <xsl:with-param name="index" select="string-length($patientName) + 1"/>
