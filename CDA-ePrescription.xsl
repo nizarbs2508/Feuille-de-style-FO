@@ -850,7 +850,7 @@
                     }
                     /* <!-- Extension FR --> */
                     .td_first {
-                        width: 20%;
+                        width: 25%;
                         font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
                         font-weight: bold;
                         background-color: <xsl:value-of select="$bgcolor-blue-th"/>;
@@ -859,14 +859,37 @@
                     }
                     /* <!-- Extension FR --> */
                     .td_seconde {
-                         width: 80%;
+                         width: 65%;
                          font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
                          background-color: white;
                          border: 1px solid;
                     }
                     /* <!-- Extension FR --> */
+                        .td_third {
+                        width: 10%;
+                        font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                        background-color: white;
+                        border: 1px solid;
+                        }
+                    /* <!-- Extension FR --> */
+                        .td_first_1 {
+                        width: 22%;
+                        font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: bold;
+                        background-color: <xsl:value-of select="$bgcolor-th"/>;
+                        color: black;
+                        border: 1px solid;
+                        }
+                        /* <!-- Extension FR --> */
+                        .td_seconde_1 {
+                        width: 75%;
+                        font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
+                        background-color: white;
+                        border: 1px solid;
+                        }
+                    /* <!-- Extension FR --> */
                     .td_next {
-                        width: 21.5%;
+                        width: 30%;
                         font-size: <xsl:value-of select="$font-size-main"/>; /* IE8 hack: doesn't understand inheritance */
                         font-weight: bold;
                         background-color: <xsl:value-of select="$bgcolor-th"/>;
@@ -1055,6 +1078,21 @@
                         if (document.getElementById('element') !== null) {
                             var div = document.getElementById('element');
                             var cookieValue = document.getElementById('element').getAttribute('value');
+                            var svgNode = DATAMatrix
+                            ({
+                                dim: 256,
+                                rct: 0,
+                                pad: 2,
+                                pal:[ "#000000", "#f2f4f8"],
+                                vrb: 0,
+                                msg: cookieValue
+                            });
+                            div.append(svgNode);
+                        }</script>
+                    <script type="text/javascript">
+                        if (document.getElementById('elementMatrix') !== null) {
+                            var div = document.getElementById('elementMatrix');
+                            var cookieValue = document.getElementById('elementMatrix').getAttribute('value');
                             var svgNode = DATAMatrix
                             ({
                                 dim: 256,
@@ -3876,11 +3914,110 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="hl7:renderMultiMedia">
+        <!-- A enlever pour le bar code -->
+        <xsl:variable name="rpps">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:participant[@typeCode = 'CON']">
+                <xsl:choose>
+                    <xsl:when
+                        test="hl7:functionCode[@code = 'CORRE'] and hl7:associatedEntity/hl7:id[@root = '1.2.250.1.71.4.2.1']">
+                        <xsl:value-of
+                            select="hl7:associatedEntity/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="rppsReplaced">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:author">
+                <xsl:choose>
+                    <xsl:when test="hl7:assignedAuthor/hl7:id/@root = '1.2.250.1.71.4.2.1'">
+                        <xsl:value-of
+                            select="hl7:assignedAuthor/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="rppsRemplacant">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:author">
+                <xsl:choose>
+                    <xsl:when test="hl7:assignedAuthor/hl7:id/@root = '1.2.250.1.71.4.2.1'">
+                        <xsl:value-of
+                            select="hl7:assignedAuthor/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="finess">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:author">
+                <xsl:choose>
+                    <xsl:when
+                        test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id/@root = '1.2.250.1.71.4.2.2'">
+                        <xsl:value-of
+                            select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id[@root = '1.2.250.1.71.4.2.2']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="amNumber">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:participant[@typeCode = 'CON']">
+                <xsl:choose>
+                    <xsl:when
+                        test="hl7:functionCode/@code = 'CORRE' and hl7:associatedEntity/hl7:id/@root = '1.2.250.1.215.600'">
+                        <xsl:value-of
+                            select="hl7:associatedEntity/hl7:id[@root = '1.2.250.1.215.600']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="amNumberReplacement">
+            <xsl:for-each select="ancestor::hl7:ClinicalDocument/hl7:author">
+                <xsl:choose>
+                    <xsl:when
+                        test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id/@root = '1.2.250.1.215.600'">
+                        <xsl:value-of
+                            select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id[@root = '1.2.250.1.215.600']/@extension"
+                        />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <!-- FIN Bare Code -->
         <xsl:variable name="imageRefs" select="@referencedObject"/>
         <xsl:variable name="referencedObjects"
             select="ancestor::hl7:ClinicalDocument//hl7:regionOfInterest[@ID = $imageRefs] | ancestor::hl7:ClinicalDocument//hl7:observationMedia[@ID = $imageRefs]"/>
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
             <div>
+                <xsl:if test="ancestor::hl7:ClinicalDocument//hl7:templateId[@root='1.2.250.1.213.1.1.2.223']">
+                    <xsl:apply-templates select="hl7:caption"/>
+                    <xsl:for-each select="$referencedObjects">
+                        <xsl:if test="self::hl7:observationMedia">
+                            <xsl:call-template name="show-barcode">
+                                <xsl:with-param name="effectiveTime"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:effectiveTime/@value"/>
+                                <xsl:with-param name="patientName"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:family[@qualifier = 'BR']/text()"/>
+                                <xsl:with-param name="patientGiven"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:given[@qualifier = 'BR']/text()"/>
+                                <xsl:with-param name="patientBirthDate"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:birthTime/@value"/>
+                                <xsl:with-param name="rppsPres" select="$rpps"/>
+                                <xsl:with-param name="rppsReplaced" select="$rppsReplaced"/>
+                                <xsl:with-param name="rppsReplacement" select="$rppsRemplacant"/>
+                                <xsl:with-param name="finessGeo" select="$finess"/>
+                                <xsl:with-param name="amNumber" select="$amNumber"/>
+                                <xsl:with-param name="amNumberReplacement"
+                                    select="$amNumberReplacement"/>
+                                <xsl:with-param name="numEPrescription"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:documentationOf/hl7:serviceEvent/hl7:id/@extension"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="not(ancestor::hl7:ClinicalDocument//hl7:templateId[@root='1.2.250.1.213.1.1.2.223'])">
                 <xsl:apply-templates select="hl7:caption"/>
                 <xsl:for-each select="$referencedObjects">
                     <xsl:choose>
@@ -3898,10 +4035,38 @@
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
+                </xsl:if>
             </div>
         </xsl:if>
         <xsl:if test="contains($vendor, 'Saxonica')">
             <fo:block>
+                <xsl:if test="ancestor::hl7:ClinicalDocument//hl7:templateId[@root='1.2.250.1.213.1.1.2.223']">
+                    <xsl:apply-templates select="hl7:caption"/>
+                    <xsl:for-each select="$referencedObjects">
+                        <xsl:if test="self::hl7:observationMedia">
+                            <xsl:call-template name="show-barcode">
+                                <xsl:with-param name="effectiveTime"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:effectiveTime/@value"/>
+                                <xsl:with-param name="patientName"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:family[@qualifier = 'BR']/text()"/>
+                                <xsl:with-param name="patientGiven"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:given[@qualifier = 'BR']/text()"/>
+                                <xsl:with-param name="patientBirthDate"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:birthTime/@value"/>
+                                <xsl:with-param name="rppsPres" select="$rpps"/>
+                                <xsl:with-param name="rppsReplaced" select="$rppsReplaced"/>
+                                <xsl:with-param name="rppsReplacement" select="$rppsRemplacant"/>
+                                <xsl:with-param name="finessGeo" select="$finess"/>
+                                <xsl:with-param name="amNumber" select="$amNumber"/>
+                                <xsl:with-param name="amNumberReplacement"
+                                    select="$amNumberReplacement"/>
+                                <xsl:with-param name="numEPrescription"
+                                    select="ancestor::hl7:ClinicalDocument/hl7:documentationOf/hl7:serviceEvent/hl7:id/@extension"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="not(ancestor::hl7:ClinicalDocument//hl7:templateId[@root='1.2.250.1.213.1.1.2.223'])">
                 <xsl:apply-templates select="hl7:caption"/>
                 <xsl:for-each select="$referencedObjects">
                     <xsl:choose>
@@ -3919,6 +4084,7 @@
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
+                </xsl:if>
             </fo:block>
         </xsl:if>
     </xsl:template>
@@ -4382,99 +4548,12 @@
     <!-- Extension FR -->
     <xsl:template name="show-header">
         <xsl:if test="not(contains($vendor, 'Saxonica'))">
+            <br/>
             <table class="first_table">
                 <tbody>
-                    <!-- A enlever pour le bar code -->
-                    <xsl:variable name="rpps">
-                        <xsl:for-each select="hl7:participant[@typeCode = 'CON']">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:functionCode[@code = 'CORRE'] and hl7:associatedEntity/hl7:id[@root = '1.2.250.1.71.4.2.1']">
-                                    <xsl:value-of
-                                        select="hl7:associatedEntity/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="rppsReplaced">
-                        <xsl:for-each select="hl7:author">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:assignedAuthor/hl7:id/@root = '1.2.250.1.71.4.2.1'">
-                                    <xsl:value-of
-                                        select="hl7:assignedAuthor/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="rppsRemplacant">
-                        <xsl:for-each select="hl7:author">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:assignedAuthor/hl7:id/@root = '1.2.250.1.71.4.2.1'">
-                                    <xsl:value-of
-                                        select="hl7:assignedAuthor/hl7:id[@root = '1.2.250.1.71.4.2.1']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="finess">
-                        <xsl:for-each select="hl7:author">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id/@root = '1.2.250.1.71.4.2.2'">
-                                    <xsl:value-of
-                                        select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id[@root = '1.2.250.1.71.4.2.2']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="amNumber">
-                        <xsl:for-each select="hl7:participant[@typeCode = 'CON']">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:functionCode/@code = 'CORRE' and hl7:associatedEntity/hl7:id/@root = '1.2.250.1.215.600'">
-                                    <xsl:value-of
-                                        select="hl7:associatedEntity/hl7:id[@root = '1.2.250.1.215.600']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="amNumberReplacement">
-                        <xsl:for-each select="hl7:author">
-                            <xsl:choose>
-                                <xsl:when
-                                    test="hl7:assignedAuthor/hl7:representedOrganization/hl7:id/@root = '1.2.250.1.215.600'">
-                                    <xsl:value-of
-                                        select="hl7:assignedAuthor/hl7:representedOrganization/hl7:id[@root = '1.2.250.1.215.600']/@extension"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:call-template name="show-barcode">
-                        <xsl:with-param name="effectiveTime" select="hl7:effectiveTime/@value"/>
-                        <xsl:with-param name="patientName"
-                            select="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:family[@qualifier = 'BR']/text()"/>
-                        <xsl:with-param name="patientGiven"
-                            select="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:name/hl7:given[@qualifier = 'BR']/text()"/>
-                        <xsl:with-param name="patientBirthDate"
-                            select="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:birthTime/@value"/>
-                        <xsl:with-param name="rppsPres" select="$rpps"/>
-                        <xsl:with-param name="rppsReplaced" select="$rppsReplaced"/>
-                        <xsl:with-param name="rppsReplacement" select="$rppsRemplacant"/>
-                        <xsl:with-param name="finessGeo" select="$finess"/>
-                        <xsl:with-param name="amNumber" select="$amNumber"/>
-                        <xsl:with-param name="amNumberReplacement" select="$amNumberReplacement"/>
-                    </xsl:call-template>
-                    <!-- FIN Bare Code -->
                     <!-- Patient row -->
                     <xsl:for-each select="hl7:recordTarget/hl7:patientRole">
+                        <!-- DataMatrix INS non signée -->
                         <xsl:variable name="row1">
                             <xsl:if
                                 test="hl7:patient/hl7:name[1]/hl7:given[@qualifier != &apos;CL&apos; or not(@qualifier)]">
@@ -4562,7 +4641,7 @@
                             </xsl:if>
                         </xsl:variable>
                         <xsl:variable name="row"
-                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
+                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10 + 1"/>
                         <tr>
                             <td class="td_first">
                                 <span class="span_label">
@@ -4580,7 +4659,7 @@
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td rowspan="{$row}" class="td_seconde">
+                            <td rowspan="{$row}" class="td_third">
                                 <xsl:variable name="ins"
                                     select="translate(hl7:id[@root = '1.2.250.1.213.1.4.8']/@extension, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
                                 <xsl:variable name="countP"
@@ -4908,14 +4987,14 @@
                             hl7:componentOf/hl7:encompassingEncounter/hl7:responsibleParty/hl7:assignedEntity/hl7:representedOrganization/hl7:name
                             or hl7:encompassingEncounter/hl7:effectiveTime">
                         <tr>
-                            <td class="td_next">
+                            <td class="td_first_1">
                                 <span class="span_label">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'Encounter'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_seconde">
+                            <td class="td_seconde_1">
                                 <xsl:if test="
                                         hl7:componentOf/hl7:encompassingEncounter/hl7:responsibleParty/hl7:assignedEntity/hl7:representedOrganization/hl7:name
                                         ">
@@ -4935,14 +5014,14 @@
                     </xsl:if>
                     <xsl:if test="hl7:documentationOf/hl7:serviceEvent">
                         <tr>
-                            <td class="td_next">
+                            <td class="td_first_1">
                                 <span class="span_label">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'actes'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_seconde">
+                            <td class="td_seconde_1">
                                 <span class="span_value">
                                     <xsl:call-template name="show-actes"/>
                                     <xsl:text> </xsl:text>
@@ -4952,14 +5031,14 @@
                     </xsl:if>
                     <xsl:if test="hl7:author">
                         <tr>
-                            <td class="td_next">
+                            <td class="td_first_1">
                                 <span class="span_label">
                                     <xsl:call-template name="getLocalizedString">
                                         <xsl:with-param name="key" select="'typeCode-AUT'"/>
                                     </xsl:call-template>
                                 </span>
                             </td>
-                            <td class="td_seconde">
+                            <td class="td_seconde_1">
                                 <span class="span_value">
                                     <xsl:call-template name="show-authors"/>
                                     <xsl:text> </xsl:text>
@@ -4972,7 +5051,7 @@
             <br/>
             <br/>
         </xsl:if>
-        <xsl:if test="(contains($vendor, 'Saxonica'))">
+        <xsl:if test="contains($vendor, 'Saxonica')">
             <xsl:if test="hl7:recordTarget/hl7:patientRole">
                 <fo:block xsl:use-attribute-sets="myMargin">
                     <fo:table xsl:use-attribute-sets="myBorder">
@@ -6335,7 +6414,9 @@
                                                   <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
                                                   </xsl:call-template>
-                                                  <br/>
+                                                    <xsl:if test="position() != last()">
+                                                        <br/>
+                                                    </xsl:if>
                                                 </xsl:for-each>
                                             </xsl:if>
                                         </span>
@@ -6884,13 +6965,16 @@
                                         </span>
                                         <span style="font-weight: normal;">
                                             <xsl:if
-                                                test="not(hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:telecom/@nullFlavor) and hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:telecom/@use = 'WP'">
+                                                test="not(hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:telecom/@nullFlavor) 
+                                                and hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:telecom">
                                                 <xsl:for-each
                                                   select="hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:telecom">
                                                   <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
                                                   </xsl:call-template>
-                                                  <br/>
+                                                    <xsl:if test="position() != last()">
+                                                        <br/>
+                                                    </xsl:if>
                                                 </xsl:for-each>
                                             </xsl:if>
                                         </span>
@@ -6934,13 +7018,16 @@
                                         </span>
                                         <span style="font-weight: normal;">
                                             <xsl:if
-                                                test="not(hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom/@nullFlavor) and hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom/@use = 'WP'">
+                                                test="not(hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom/@nullFlavor) 
+                                                and hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom">
                                                 <xsl:for-each
                                                   select="hl7:serviceEvent/hl7:performer/hl7:assignedEntity/hl7:representedOrganization/hl7:telecom">
                                                   <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
                                                   </xsl:call-template>
-                                                  <br/>
+                                                    <xsl:if test="position() != last()">
+                                                        <br/>
+                                                    </xsl:if>
                                                 </xsl:for-each>
                                             </xsl:if>
                                         </span>
@@ -7766,7 +7853,9 @@
                                                   <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
                                                   </xsl:call-template>
-                                                  <br/>
+                                                    <xsl:if test="position() != last()">
+                                                        <br/>
+                                                    </xsl:if>
                                                 </xsl:for-each>
                                             </span>
                                             <br/>
@@ -7815,7 +7904,9 @@
                                                   <xsl:call-template name="show-telInfo-patient">
                                                   <xsl:with-param name="contact" select="."/>
                                                   </xsl:call-template>
-                                                  <br/>
+                                                    <xsl:if test="position() != last()">
+                                                        <br/>
+                                                    </xsl:if>
                                                 </xsl:for-each>
                                             </span>
                                         </xsl:if>
@@ -8275,7 +8366,9 @@
                                         <xsl:call-template name="show-telInfo-patient">
                                             <xsl:with-param name="contact" select="."/>
                                         </xsl:call-template>
-                                        <br/>
+                                        <xsl:if test="position() != last()">
+                                            <br/>
+                                        </xsl:if>
                                     </xsl:for-each>
                                 </xsl:if>
                             </td>
@@ -8371,7 +8464,9 @@
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -8412,7 +8507,9 @@
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -8526,7 +8623,9 @@
                                         <xsl:call-template name="show-telInfo-patient">
                                             <xsl:with-param name="contact" select="."/>
                                         </xsl:call-template>
-                                        <br/>
+                                        <xsl:if test="position() != last()">
+                                            <br/>
+                                        </xsl:if>
                                     </xsl:for-each>
                                 </xsl:if>
                             </td>
@@ -8838,13 +8937,14 @@
                                     </xsl:if>
                                     <xsl:if
                                         test="hl7:assignedEntity/hl7:representedOrganization/hl7:telecom">
-
                                         <xsl:for-each
                                             select="hl7:assignedEntity/hl7:representedOrganization/hl7:telecom">
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -8885,7 +8985,9 @@
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -8970,7 +9072,9 @@
                                         <xsl:call-template name="show-telInfo-patient">
                                             <xsl:with-param name="contact" select="."/>
                                         </xsl:call-template>
-                                        <br/>
+                                        <xsl:if test="position() != last()">
+                                            <br/>
+                                        </xsl:if>
                                     </xsl:for-each>
                                 </xsl:if>
                             </td>
@@ -9020,7 +9124,9 @@
                                         <xsl:call-template name="show-telInfo-patient">
                                             <xsl:with-param name="contact" select="."/>
                                         </xsl:call-template>
-                                        <br/>
+                                        <xsl:if test="position() != last()">
+                                            <br/>
+                                        </xsl:if>
                                     </xsl:for-each>
                                 </xsl:if>
                             </td>
@@ -9098,7 +9204,9 @@
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -9149,7 +9257,9 @@
                                             <xsl:call-template name="show-telInfo-patient">
                                                 <xsl:with-param name="contact" select="."/>
                                             </xsl:call-template>
-                                            <br/>
+                                            <xsl:if test="position() != last()">
+                                                <br/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </td>
@@ -16457,6 +16567,7 @@
         <xd:param name="amNumber"/>
         <xd:param name="amNumberReplacement"/>
         <xd:param name="rppsReplaced"/>
+        <xd:param name="numEPrescription"/>
     </xd:doc>
     <xsl:template name="show-barcode">
         <xsl:param name="effectiveTime"/>
@@ -16469,11 +16580,9 @@
         <xsl:param name="finessGeo"/>
         <xsl:param name="amNumber"/>
         <xsl:param name="amNumberReplacement"/>
-
-
+        <xsl:param name="numEPrescription" />
         <!-- réference number -->
         <xsl:variable name="refNumber" select="2"/>
-
         <xsl:variable name="year" select="substring($effectiveTime, 1, 4)"/>
         <xsl:variable name="month" select="substring($effectiveTime, 5, 2)"/>
         <xsl:variable name="day" select="substring($effectiveTime, 7, 2)"/>
@@ -16594,14 +16703,12 @@
                 <xsl:with-param name="maxcountDatePre" select="5"/>
             </xsl:call-template>
         </xsl:variable>
-
         <!-- identifiant unique de la prescription -->
         <xsl:variable name="uniqueIdPresc">
             <xsl:value-of
                 select="concat($convertedDate, $convertedTime, $convertedTimeMS, $convertedRandom)"
             />
         </xsl:variable>
-
         <xsl:variable name="spaceName100">
             <xsl:call-template name="repeatable100">
                 <xsl:with-param name="index" select="string-length($patientName) + 1"/>
@@ -16630,7 +16737,6 @@
                 <xsl:with-param name="index" select="string-length($patientGiven) + 1"/>
             </xsl:call-template>
         </xsl:variable>
-
         <!-- Prenom du patient 100 char-->
         <xsl:variable name="familyGiven100">
             <xsl:value-of select="concat($patientGiven, $spaceGiven100)"/>
@@ -16639,7 +16745,6 @@
         <xsl:variable name="familyGiven90">
             <xsl:value-of select="concat($patientGiven, $spaceGiven90)"/>
         </xsl:variable>
-
         <!-- date de naissance du patient -->
         <xsl:variable name="dateNaissance">
             <xsl:if test="string-length($patientBirthDate) &gt;= 8">
@@ -16650,7 +16755,6 @@
                         substring($patientBirthDate, 7, 2))"/>
             </xsl:if>
         </xsl:variable>
-
         <!-- Numero RPPS du prescripteur remplacé -->
         <xsl:variable name="lengthrpps" select="string-length($rppsPres)"/>
         <xsl:variable name="restrict" select="$lengthrpps - 11"/>
@@ -16662,8 +16766,6 @@
                 <xsl:value-of select="$rppsPres"/>
             </xsl:if>
         </xsl:variable>
-
-
         <!-- Numero RPPS du prescripteur non remplacé -->
         <xsl:variable name="lengthrppsReplaced" select="string-length($rppsReplaced)"/>
         <xsl:variable name="restrictReplaced" select="$lengthrppsReplaced - 11"/>
@@ -16675,7 +16777,6 @@
                 <xsl:value-of select="$rppsReplaced"/>
             </xsl:if>
         </xsl:variable>
-
         <xsl:variable name="rPPS">
             <xsl:choose>
                 <xsl:when test="string-length($rppsPrescripteur) &gt; 0">
@@ -16686,7 +16787,6 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-
         <!-- Numero RPPS du remplaçant -->
         <xsl:variable name="lengthrppsReplace" select="string-length($rppsReplacement)"/>
         <xsl:variable name="restrictReplace" select="$lengthrppsReplace - 11"/>
@@ -16700,7 +16800,6 @@
                 </xsl:if>
             </xsl:if>
         </xsl:variable>
-
         <!-- Numero FINESS GEO -->
         <xsl:variable name="lengthfiness" select="string-length($finessGeo)"/>
         <xsl:variable name="restrictFiness" select="$lengthfiness - 9"/>
@@ -16712,8 +16811,6 @@
                 <xsl:value-of select="$finessGeo"/>
             </xsl:if>
         </xsl:variable>
-
-
         <!-- Numéro AM prescripteur remplacé -->
         <xsl:variable name="lengthamPrescripteur" select="string-length($amNumber)"/>
         <xsl:variable name="restrictamPrescripteur" select="$lengthamPrescripteur - 9"/>
@@ -16725,7 +16822,6 @@
                 <xsl:value-of select="$amNumber"/>
             </xsl:if>
         </xsl:variable>
-
         <!-- Numéro AM prescripteur -->
         <xsl:variable name="lengthamNumberReplacement" select="string-length($amNumberReplacement)"/>
         <xsl:variable name="restrictamNumberReplacement" select="$lengthamNumberReplacement - 9"/>
@@ -16738,7 +16834,6 @@
                 <xsl:value-of select="$amNumberReplacement"/>
             </xsl:if>
         </xsl:variable>
-
         <xsl:variable name="am">
             <xsl:choose>
                 <xsl:when test="string-length($amPrescripteur) &gt; 0">
@@ -16749,7 +16844,6 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-
         <!-- NOM/Prenom du patient selon RPPS remplaçant-->
         <xsl:variable name="nom">
             <xsl:if test="string-length($rppsReplace) = 0">
@@ -16759,7 +16853,6 @@
                 <xsl:value-of select="$familyName90"/>
             </xsl:if>
         </xsl:variable>
-
         <xsl:variable name="prenom">
             <xsl:if test="string-length($rppsReplace) = 0">
                 <xsl:value-of select="$familyGiven100"/>
@@ -16768,7 +16861,6 @@
                 <xsl:value-of select="$familyGiven90"/>
             </xsl:if>
         </xsl:variable>
-
         <xsl:variable name="dataMatrixValue">
             <xsl:if
                 test="$refNumber and $uniqueIdPresc and $nom and $prenom and $dateNaissance and $rPPS">
@@ -16777,8 +16869,38 @@
                 />
             </xsl:if>
         </xsl:variable>
-
-        <xsl:value-of select="$dataMatrixValue"/>
+        
+        <!--<xsl:value-of select="$dataMatrixValue"/>-->
+        <xsl:if test="contains($vendor, 'Saxonica')">
+            <fo:block>
+                <fo:instream-foreign-object>
+                    <j4lbarcode mode="inline" xmlns="http://java4less.com/j4lbarcode/fop">
+                        <datamatrix>
+                            <code>
+                                <xsl:value-of select="$dataMatrixValue"/>
+                            </code>
+                            <moduleSize>2</moduleSize>
+                            <processTilde>true</processTilde>
+                            <encoding>AUTO</encoding>
+                            <format>C24X24</format>
+                        </datamatrix>
+                    </j4lbarcode>
+                </fo:instream-foreign-object>
+                <fo:block line-height="0.01cm">&#160;</fo:block>
+                <fo:block font-size="4" margin-left="30px">
+                    <xsl:text>e-prescription</xsl:text>
+                    <fo:block line-height="0.1cm">&#160;</fo:block>                    
+                </fo:block>
+                <fo:block font-size="4" margin-left="20px">
+                    N°<xsl:value-of select="$numEPrescription"/>
+                </fo:block>
+            </fo:block>
+        </xsl:if>
+        <xsl:if test="not(contains($vendor, 'Saxonica'))">
+            <div id="elementMatrix" value="{$dataMatrixValue}" class="barcodeStyle"/>
+            <div style="margin: 0px 0px 0px 70px;">e-prescription</div>
+            <div style="margin: 0px 0px 0px 40px;">N°<xsl:value-of select="$numEPrescription"/></div>
+        </xsl:if>
     </xsl:template>
 
     <xd:doc>

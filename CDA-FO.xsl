@@ -5647,7 +5647,7 @@
                             </xsl:if>
                         </xsl:variable>
                         <xsl:variable name="row"
-                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10"/>
+                            select="$row7 + $row8 + $row9 + $row6 + $row5 + $row4 + $row3 + $row2 + $row1 + $row10 + 1"/>
                         <tr>
                             <td class="td_first">
                                 <span class="span_label">
