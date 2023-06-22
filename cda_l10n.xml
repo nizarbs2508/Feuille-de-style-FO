@@ -3355,13 +3355,13 @@
         <comment>Label: ParticipationType verifier</comment>
         <value lang="en-us">verifier</value>
         <value lang="nl-nl">toezichthouder</value>
-        <value lang="fr-fr">Vérificateur </value>
+        <value lang="fr-fr">Vérificateur</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-AUTHEN">
         <comment>Label: ParticipationType authenticator</comment>
         <value lang="en-us">authenticator</value>
         <value lang="nl-nl">onderetkenaar</value>
-        <value lang="fr-fr">Valideur des résultats </value>
+        <value lang="fr-fr">Valideur des résultats</value>
     </translation>
     <translation key="2.16.840.1.113883.5.90-LA">
         <comment>Label: ParticipationType legal authenticator</comment>
