@@ -16581,7 +16581,7 @@
         <xsl:param name="amNumber"/>
         <xsl:param name="amNumberReplacement"/>
         <xsl:param name="numEPrescription" />
-        <!-- réference number -->
+        <!-- réference number : Numéro de référence du standard utilisé pour le code 2D-->
         <xsl:variable name="refNumber" select="2"/>
        <!-- <xsl:variable name="year" select="substring($effectiveTime, 1, 4)"/>
         <xsl:variable name="month" select="substring($effectiveTime, 5, 2)"/>
@@ -16703,46 +16703,54 @@
             />
         </xsl:variable>-->
         
+        <!-- Identifiant unique de la prescription -->
         <xsl:variable name="uniqueIdPresc">
-            <xsl:value-of select="hl7:documentationOf/hl7:serviceEvent/hl7:id/@extension"/>
+            <xsl:value-of select="$numEPrescription"/>
         </xsl:variable>
-        
         <xsl:variable name="spaceName100">
             <xsl:call-template name="repeatable100">
                 <xsl:with-param name="index" select="string-length($patientName) + 1"/>
             </xsl:call-template>
         </xsl:variable>
+        
         <xsl:variable name="spaceName90">
             <xsl:call-template name="repeatable90">
                 <xsl:with-param name="index" select="string-length($patientName) + 1"/>
             </xsl:call-template>
         </xsl:variable>
+        
         <!-- Nom du patient 100 char -->
         <xsl:variable name="familyName100">
             <xsl:value-of select="concat($patientName, $spaceName100)"/>
         </xsl:variable>
+        
         <!-- Nom du patient 90 char -->
         <xsl:variable name="familyName90">
             <xsl:value-of select="concat($patientName, $spaceName90)"/>
         </xsl:variable>
+        
         <xsl:variable name="spaceGiven100">
             <xsl:call-template name="repeatable100">
                 <xsl:with-param name="index" select="string-length($patientGiven) + 1"/>
             </xsl:call-template>
         </xsl:variable>
+        
         <xsl:variable name="spaceGiven90">
             <xsl:call-template name="repeatable90">
                 <xsl:with-param name="index" select="string-length($patientGiven) + 1"/>
             </xsl:call-template>
         </xsl:variable>
+        
         <!-- Prenom du patient 100 char-->
         <xsl:variable name="familyGiven100">
             <xsl:value-of select="concat($patientGiven, $spaceGiven100)"/>
         </xsl:variable>
+        
         <!-- Prenom du patient 90 char -->
         <xsl:variable name="familyGiven90">
             <xsl:value-of select="concat($patientGiven, $spaceGiven90)"/>
         </xsl:variable>
+        
         <!-- date de naissance du patient -->
         <xsl:variable name="dateNaissance">
             <xsl:if test="string-length($patientBirthDate) &gt;= 8">
@@ -16753,6 +16761,7 @@
                         substring($patientBirthDate, 7, 2))"/>
             </xsl:if>
         </xsl:variable>
+        
         <!-- Numero RPPS du prescripteur remplacé -->
         <xsl:variable name="lengthrpps" select="string-length($rppsPres)"/>
         <xsl:variable name="restrict" select="$lengthrpps - 11"/>
@@ -16764,6 +16773,7 @@
                 <xsl:value-of select="$rppsPres"/>
             </xsl:if>
         </xsl:variable>
+        
         <!-- Numero RPPS du prescripteur non remplacé -->
         <xsl:variable name="lengthrppsReplaced" select="string-length($rppsReplaced)"/>
         <xsl:variable name="restrictReplaced" select="$lengthrppsReplaced - 11"/>
@@ -16775,6 +16785,7 @@
                 <xsl:value-of select="$rppsReplaced"/>
             </xsl:if>
         </xsl:variable>
+        
         <xsl:variable name="rPPS">
             <xsl:choose>
                 <xsl:when test="string-length($rppsPrescripteur) &gt; 0">
@@ -16785,6 +16796,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        
         <!-- Numero RPPS du remplaçant -->
         <xsl:variable name="lengthrppsReplace" select="string-length($rppsReplacement)"/>
         <xsl:variable name="restrictReplace" select="$lengthrppsReplace - 11"/>
@@ -16798,7 +16810,8 @@
                 </xsl:if>
             </xsl:if>
         </xsl:variable>
-        <!-- Numero FINESS GEO -->
+        
+        <!-- FINESS Géographique -->
         <xsl:variable name="lengthfiness" select="string-length($finessGeo)"/>
         <xsl:variable name="restrictFiness" select="$lengthfiness - 9"/>
         <xsl:variable name="finess">
@@ -16809,6 +16822,7 @@
                 <xsl:value-of select="$finessGeo"/>
             </xsl:if>
         </xsl:variable>
+        
         <!-- Numéro AM prescripteur remplacé -->
         <xsl:variable name="lengthamPrescripteur" select="string-length($amNumber)"/>
         <xsl:variable name="restrictamPrescripteur" select="$lengthamPrescripteur - 9"/>
@@ -16820,6 +16834,7 @@
                 <xsl:value-of select="$amNumber"/>
             </xsl:if>
         </xsl:variable>
+        
         <!-- Numéro AM prescripteur -->
         <xsl:variable name="lengthamNumberReplacement" select="string-length($amNumberReplacement)"/>
         <xsl:variable name="restrictamNumberReplacement" select="$lengthamNumberReplacement - 9"/>
@@ -16832,6 +16847,7 @@
                 <xsl:value-of select="$amNumberReplacement"/>
             </xsl:if>
         </xsl:variable>
+        
         <xsl:variable name="am">
             <xsl:choose>
                 <xsl:when test="string-length($amPrescripteur) &gt; 0">
@@ -16842,6 +16858,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        
         <!-- NOM/Prenom du patient selon RPPS remplaçant-->
         <xsl:variable name="nom">
             <xsl:if test="string-length($rppsReplace) = 0">
@@ -16859,6 +16876,8 @@
                 <xsl:value-of select="$familyGiven90"/>
             </xsl:if>
         </xsl:variable>
+        
+        <!-- Données du code 2D -->
         <xsl:variable name="dataMatrixValue">
             <xsl:if
                 test="$refNumber and $uniqueIdPresc and $nom and $prenom and $dateNaissance and $rPPS">
@@ -16867,8 +16886,6 @@
                 />
             </xsl:if>
         </xsl:variable>
-        
-        <!--<xsl:value-of select="$dataMatrixValue"/>-->
         <xsl:if test="contains($vendor, 'Saxonica')">
             <fo:block>
                 <fo:instream-foreign-object>
